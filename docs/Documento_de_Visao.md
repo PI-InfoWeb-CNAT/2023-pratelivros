@@ -8,14 +8,14 @@
 | 01/06/2021 | **1.00** | Versão Inicial  | George Azevedo |
 
 ## 1. Objetivo do Projeto 
-Este projeto tem objetivo de desenvolver um site que sirva de plataforma para leitores trocarem livros entre si sem a necessidade de transferências monetárias.
+Este projeto tem o objetivo de desenvolver um site que sirva de plataforma para leitores trocarem livros entre si sem a necessidade de transferências monetárias.
  
 ## 2. Descrição do problema 
 | | |
 |:-|:-|
 | **_O problema_**    | é a inexistência de um serviço local atraente e prático que sirva para a troca de livros  |
-| **_afetando_**      | leitores que procuram a oportunidade de doar um livro e ganhar outro                      |
-| **_cujo impacto é_**| a necessidade de gastar dinheiro para uma compra ou ir em um local como um sebo/biblioteca sem a certeza da disponibilidade de um livro que lhe é de interesse                                    |
+| **_afetando_**      | leitores que procuram a oportunidade de doar um livro e receber outro                      |
+| **_cujo impacto é_**| a necessidade de gastar dinheiro em uma compra ou ir a um local como um sebo/biblioteca sem a certeza da disponibilidade de um livro que lhe é de interesse                                    |
 | **_uma boa solução seria_** | a criação de um sistema prático, funcional e interativo em que leitores possam achar livros de seus interesses com facilidade sem a necessidade de gastar dinheiro  |
 | | |
 
@@ -24,7 +24,7 @@ Este projeto tem objetivo de desenvolver um site que sirva de plataforma para le
 |:- |:- |:- |
 | Moderador  | Administrador da plataforma | Filtrar o conteúdo postado no site em imagens/texto; Analisar comentários, reclamações e denúncias  |
 | Visitante   | Usuário que visualiza o site; O visitante deve ter a possibilidade de obter informações acerca dos produtos postados, sem a necessidade de registrar suas informações cadastrais no site | O visitante deve poder consultar os produtos por várias opções de busca de forma a facilitar que ele encontre os produtos desejados; Caso deseje, poderá criar um registro de usuário com senha de forma a possibilitar o acesso a área de negociações, lista de desejos e estante |
-| Leitor | Usuário cadastrado; O leitor, após realizar seu cadastro no site, poderá criar uma estante e realizar trocas | Após a realização a inclusão de dados cadastrais tais como login e senha o usuário passa a ser visto como cliente e poderá registrar solicitações de troca. As trocas poderão ser compostas por uma proporção de no máximo 5 livros para 1. O cliente deve ter acesso às seguintes funcionalidades no site: Alterar seus dados cadastrais, com excessão do email ou número de celular identificadores; Visualizar seu histórico de trocas e observar a situação das mesmss; Cancelar as trocas; Avaliar os outros leitores|
+| Leitor | Usuário cadastrado; O leitor, após realizar seu cadastro no site, poderá criar uma estante e realizar trocas | Após a realização da inclusão de dados cadastrais tais como login e senha o usuário passa a ser visto como cliente e poderá registrar solicitações de troca. As trocas poderão ser compostas por uma proporção de no máximo 5 livros para 1. O cliente deve ter acesso às seguintes funcionalidades no site: Alterar seus dados cadastrais, com excessão do email ou número de celular identificadores; Visualizar seu histórico de trocas e observar a situação das mesmas; Cancelar as trocas; Avaliar os outros leitores|
 
 ## 4. Descrição do ambiente dos usuários 
 O comércio eletrônico tem dois tipos de usuários. O tipo administrador representa o moderador da plataforma e o tipo Cliente que representa o leitor, seja ele anônimo ou já cadastrado. 
