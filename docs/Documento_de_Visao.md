@@ -24,26 +24,30 @@ Este projeto tem objetivo de desenvolver um site que sirva de plataforma para le
 |:- |:- |:- |
 | Moderador  | Administrador da plataforma | Filtrar o conteúdo postado no site em imagens/texto; Analisar comentários, reclamações e denúncias  |
 | Visitante   | Usuário que visualiza o site; O visitante deve ter a possibilidade de obter informações acerca dos produtos postados, sem a necessidade de registrar suas informações cadastrais no site | O visitante deve poder consultar os produtos por várias opções de busca de forma a facilitar que ele encontre os produtos desejados; Caso deseje, poderá criar um registro de usuário com senha de forma a possibilitar o acesso a área de negociações, lista de desejos e estante |
-| Leitor | Usuário cadastrado; O leitor, após realizar seu cadastro no site, poderá criar uma estante e realizar trocas | Após a realização a inclusão de dados cadastrais tais como login e senha o usuário passa a ser visto como cliente e poderá registrar solicitações de troca. Os pedidos poderão ser compostos por um ou mais livros e deverão incluir suas respectivas quantidades adquiridas. O valor total do pedido deve ser apresentado. O cliente deve ter acesso às seguintes funcionalidades no site: Alterar seus dados cadastrais informando novo endereço; Visualizar seu histórico de pedidos e observar a situação dos mesmos; Visualizar a situação da entrega dos pedidos; Cancelar o pedido; Avaliar os produtos adquiridos|
+| Leitor | Usuário cadastrado; O leitor, após realizar seu cadastro no site, poderá criar uma estante e realizar trocas | Após a realização a inclusão de dados cadastrais tais como login e senha o usuário passa a ser visto como cliente e poderá registrar solicitações de troca. As trocas poderão ser compostas por uma proporção de no máximo 5 livros para 1. O cliente deve ter acesso às seguintes funcionalidades no site: Alterar seus dados cadastrais, com excessão do email ou número de celular identificadores; Visualizar seu histórico de trocas e observar a situação das mesmss; Cancelar as trocas; Avaliar os outros leitores|
 
 ## 4. Descrição do ambiente dos usuários 
-O comércio eletrônico tem dois tipos de usuários. O tipo administrador representa o gestor da loja e seus colaboradores e o tipo Cliente que representa o cliente, seja ele anônimo ou já cadastrado. 
+O comércio eletrônico tem dois tipos de usuários. O tipo administrador representa o moderador da plataforma e o tipo Cliente que representa o leitor, seja ele anônimo ou já cadastrado. 
 
-O administrador acessará o site a partir do ambiente físico da loja e fará a configuração dos produtos a serem vendidos e realizará a logística de atendimento dos pedidos coletados pelo site, registrando a informação de situação de envio dos pedidos. Nesse processo, os produtos que forem identificados fisicamente sem estoque deverão ter sua disponibilidade para venda bloqueada.
+O administrador acessará o site de qualquer ambiente que esteja para fazer a filtragem de possíveis contas ou postagens que fujam das diretrizes da plataforma.
 
-O usuário cliente irá acessar o site utilizando  um computador ou celular e realizará a visualização dos produtos vendidos na loja e realizará a compra, caso deseje. Neste caso não há muitas restrições quanto ao ambiente pois ele poderá fazer os pedidos de qualquer local que tenha conexão com internet.
+O usuário cliente irá acessar o site utilizando  um computador ou celular e realizará a visualização dos livros disponíveis para troca e realizará uma proposta, caso deseje. Neste caso também não há muitas restrições quanto ao ambiente pois ele poderá fazer as solicitações de qualquer local que tenha conexão com internet.
 
 
 ## 5. Principais necessidades dos usuários
-Considerando o pronto de vista do lojista, administrador do site, sua principal necessidade é aumentar o volume de vendas de sua loja incorporando em seu negócio a possibilidade de realização de vendas via internet. 
+Considerando o pronto de vista do moderador, administrador do site, sua principal necessidade é cultivar um ambiente saudável e convidativo que estimule os leitores a utilizarem o sistema de trocas. 
 
-Considerando o pronto de vista do cliente, ele deseja ter acesso a um site com interface amigável que permita obter informações sobre os produtos comercializados e, caso identifique que estes atendam às suas necessidades, ele possa montar sua relação de compra confirmando a aquisição. Após essa etapa ele desejará visualizar o processo de entrega dos produtos adquiridos.
+Considerando o pronto de vista do cliente, ele deseja ter acesso a um site com interface amigável que permita obter informações sobre os livros postados e, caso identifique que estes o interessem, ele possa montar sua negociação visando confirmar a aquisição. Outra necessidade para o cliente seria a de um ambiente agradável para postar seus próprios livros que já não possua tanto interesse para manter.
 
 ## 6. Alternativas concorrentes
-Uma alternativa ao comércio eletrônico desenvolvido é a lojas Americanas, que apresenta pesquisa por meio de nome ou categoria do produto, tem o sistema de carrinho de compras, que permite adicionar os produtos selecionados, deixando o pagamento somente para o final quando o cliente tiver selecionado todos os produtos desejados. Também tem o sistema de login, o qual o usuário se cadastra, o que facilita as próximas compras. Além disso em cada produto tem sua descrição, produto similares ao selecionado e uma seção destinada à avaliação dos consumidores. 
+
+São alternativas de concorrentes diretos o Livralivro, o Skoob e o Bookcrossing. Todos os três contem sistemas para a catalogação e troca de livros entre os usuário.
+Já outras aplicações que também podem ser usadas para o mesmo propósito são o Instagram e o Mercado Livro, por mais que ambos não possuam propostas minimamente relacionadas a literatura ou trocas.
 
 ## 7.	Visão geral do produto
 Esse projeto consiste em um site voltado para vendas de produtos que pretende funcionar de forma rápida e eficiente, disponibilizando um ambiente acessível a diversos tipos de usuários e possuindo um design confortável. Para tal, o site irá disponibilizar diferentes mecanismos de busca permitindo que o usuário encontre de forma eficiente o que ele precisa. Após a aquisição, o usuário poderá acompanhar o produto comprado, avaliar produtos da loja, comentar e marcar produtos como favoritos. 
+
+Esse projeto consiste em um site voltado para a troca de livros que pretende funcionar de forma prática, atrativa e interativa, disponibilizando um ambiente acessível a todos os tipos de leitores e possuindo um design confortável. Para tal, o site irá fornecer mecanismos de busca, catalogação e negociação para que o usuário consiga fazer tudo que lhe for necessário quanto às trocas. Após uma negociação finalizada, o usuário poderá combinar um ponto de encontro com o outro usuário para que a troca seja efetuada num ambiente físico e, após essa troca, ambos deverão se avaliar levando em conta os produtos que receberam.
 
 ## 8.	Requisitos funcionais
 | Código | Nome | Descrição |
