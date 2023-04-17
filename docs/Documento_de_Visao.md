@@ -44,37 +44,33 @@ Considerando o pronto de vista do cliente, ele deseja ter acesso a um site com i
 São alternativas de concorrentes diretos o Livralivro, o Skoob e o Bookcrossing. Todos os três contem sistemas para a catalogação e troca de livros entre os usuário.
 Já outras aplicações que também podem ser usadas para o mesmo propósito são o Instagram e o Mercado Livro, por mais que ambos não possuam propostas minimamente relacionadas a literatura ou trocas.
 
-## 7.	Visão geral do produto
-Esse projeto consiste em um site voltado para vendas de produtos que pretende funcionar de forma rápida e eficiente, disponibilizando um ambiente acessível a diversos tipos de usuários e possuindo um design confortável. Para tal, o site irá disponibilizar diferentes mecanismos de busca permitindo que o usuário encontre de forma eficiente o que ele precisa. Após a aquisição, o usuário poderá acompanhar o produto comprado, avaliar produtos da loja, comentar e marcar produtos como favoritos. 
+## 7.	Visão geral do produto 
 
 Esse projeto consiste em um site voltado para a troca de livros que pretende funcionar de forma prática, atrativa e interativa, disponibilizando um ambiente acessível a todos os tipos de leitores e possuindo um design confortável. Para tal, o site irá fornecer mecanismos de busca, catalogação e negociação para que o usuário consiga fazer tudo que lhe for necessário quanto às trocas. Após uma negociação finalizada, o usuário poderá combinar um ponto de encontro com o outro usuário para que a troca seja efetuada num ambiente físico e, após essa troca, ambos deverão se avaliar levando em conta os produtos que receberam.
 
 ## 8.	Requisitos funcionais
 | Código | Nome | Descrição |
 |:---  |:--- |:--- |
-| F01	| Adicionar, remover ou alterar produtos | O administrador tem à sua disponibilidade a função de adicionar, remover ou alterar produtos comercializados no site estabelecendo ainda seus preços de venda. 
-| F02	| Adicionar, remover ou alterar grupos de produtos.	| O administrador tem à sua disponibilidade a função de adicionar, remover ou alterar grupos de produtos comercializados no site.
-| F03	| Adicionar, remover ou alterar fabricante de produtos.	| O administrador tem à sua disponibilidade a função de adicionar, remover ou alterar fabricantes de produtos comercializados no site.
-| F04	| Disponibilizar ou bloquear a apresentação do produto no site de venda	| O administrador tem à sua disponibilidade a função de liberar ou bloquear a apresentação de produtos a venda 
-| F05	| Consultar pedidos realizados e não enviados.	| O administrador pode acessar os dados de vendas de produtos do site que foram realizados pelos clientes e que ainda não foram remetidos
-| F06	| Registrar recebimento do pagamento do cliente	| O administrador registra no site a identificação do recebimento do pagamento realizado pelo cliente liberando o pedido para envio.
-| F07	| Registrar o envio do pedido.	| O administrador informa no site a forma de envio do pedido ao cliente.
-| F08	| Visualizar produtos	| O usuário visualiza os produtos disponíveis filtrando ou por grupos, fabricante ou através de um trecho do nome do produto
-| F09	| Adicionar ou remover produtos à cesta de compras	| O usuário  pode escolher mais de um produto para realizar a compra e inserir em uma cesta de compras.
-| F10	| Realizar o cadastro e login no site	| O usuário pode se cadastrar no site para poder comprar produtos e acessar outras diversas funcionalidades como avaliar e comentar os produtos.
-| F11	| Realizar a compra de um produto	| Os clientes podem confirmar a compra dos produtos adicionados em sua cesta de compra gerando assim um pedido.
-| F12	| Realizar o cancelamento de pedido solicitado	| Os clientes podem solicitar o cancelamento de um pedido realizado desde que ainda não tenha sido enviado.
-| F13	| Verificar as compras realizadas	| Os clientes podem verificar seu histórico de compra na loja.
-| F14	| Verificar o andamento do pedido	| Os clientes podem acompanhar o andamento da entrega dos pedidos realizados.
-| F15	| Avaliar o Produto	| Os clientes podem avaliar os produtos realizando um comentário e atribuindo uma nota
-| F16 	| Revisar dados cadastrais	| Os clientes podem alterar seus dados cadastrais permitindo assim que façam, por exemplo, alteração do endereço de entrega
+| F01	| Remover livros publicados. | O moderador tem à sua disponibilidade a função de remover livros já publicados por leitores no site. 
+| F02	| Banir contas cadastradas.	| O moderador tem à sua disponibilidade a função de banir contas já cadastradas por visitantes no site.
+| F03	| Visualizar os livros já publicados.	| O visitante pode visualizar as informações de cada livros já publicado por um leitor.
+| F04	| Realizar cadastro e login na plataforma.	| O visitante pode se cadastrar usando seus dados para conseguir acesso às funcionalidades de um leitor.
+| F05	| Publicar livros disponíveis para troca.	| O leitor pode publicar no site um livro que possua fisicamente, descrevendo sua condição e suas informações com texto e imagens.
+| F06	| Montar, alterar e remover estantes para o perfil.	| O leitor pode montar uma estante, alterar suas informações (sejam essas informações da estante em si ou os livros que a compõem) e também pode deletar uma estante de seu perfil.
+| F07	| Abrir e receber solicitações de trocas.	| O leitor pode abrir uma solicitação de troca para cada livro publicado no site que não tenha sido publicado por si mesmo. Também pode receber solicitações de outros leitores na plataforma para os livros que tenha publicado.
+| F08	| Realizar e receber propostas em trocas já iniciadas.	| Em cada troca iniciada, ambos os leitores podem criar ou receber propostas diferentes da que tenha sido feita inicialmente, até chegar em uma que seja aceita por ambos.
+| F09	| Realizar cancelamento de uma troca.	| O leitor pode cancelar uma troca por completo, deixando o outro leitor sem a possibilidade de criar novas propostas.
+| F10	| Visualizar seu histórico de trocas.	| O leitor pode acessar informações sobre suas trocas já finalizadas.
+| F11	| Conversar no chat de cada negociação.	| Ambos os leitores de uma troca podem conversar no chat desta mesma troca.
+| F12	| Avaliar outros leitores.	| Após uma troca finalizada, o leitor pode fazer a avaliação do outro leitor que tenha trocado seu(s) livro(s).
+| F13 	| Revisar dados cadastrais	| O leitor pode alterar seus dados cadastrais, com exceção do dado que o identifique, sendo esse o email ou o celular.
 | | | | 
 
 ## 9.	Requisitos não-funcionais
 | Código | Nome | Descrição | Categoria | Classificação |
 |:---  |:--- |:--- |:--- |:--- |
 | NF01	| Design responsivo	| O site apresentará responsividade, deixando-o mais confortável para o usuário | Usabilidade	| obrigatório
-| NF02	| Acesso somente com internet	| É necessário um acesso contínuo à Internet para poder acessar os dados do site e suas funcionalidades, como comprar produtos.	| Disponibilidade	| Obrigatório
+| NF02	| Acesso somente com internet	| É necessário um acesso contínuo à Internet para poder acessar os dados do site e suas funcionalidades, como trocar produtos.	| Disponibilidade	| Obrigatório
 | NF03	| Criptografia das informações sensíveis aos usuários	| Senhas do usuário devem ser gravadas de forma criptografada no banco de dados	| Segurança	| Obrigatório
 | NF04	| Organização do conteúdo de forma objetiva	| O site apresentará o conteúdo de forma objetiva, de modo que o usuário encontre o desejado com facilidade.	| Usabilidade	| Obrigatório
 | | | | 
