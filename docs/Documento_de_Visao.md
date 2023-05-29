@@ -16,8 +16,7 @@ Este projeto tem o objetivo de desenvolver um site que sirva de plataforma para 
 | **_O problema_**    | é a inexistência de um serviço local atraente e prático que sirva para a troca de livros  |
 | **_afetando_**      | leitores que procuram a oportunidade de doar um livro e receber outro                      |
 | **_cujo impacto é_**| a necessidade de gastar dinheiro em uma compra ou ir a um local como um sebo/biblioteca sem a certeza da disponibilidade de um livro que lhe é de interesse                                    |
-| **_uma boa solução seria_** | a criação de um sistema prático, funcional e interativo em que leitores possam achar livros de seus interesses com facilidade sem a necessidade de gastar dinheiro  |
-| | |
+| **_uma boa solução seria_** | a criação de um sistema prático, funcional e interativo em que leitores possam achar livros de seus interesses com facilidade sem a necessidade de gastar dinheiro  | 
 
 ## 3. Descrição dos usuários
 | Nome | Descrição | Responsabilidades |
@@ -64,7 +63,6 @@ Esse projeto consiste em um site voltado para a troca de livros que pretende fun
 | F11	| Conversar no chat de cada negociação.	| Ambos os leitores de uma troca podem conversar no chat desta mesma troca.
 | F12	| Avaliar outros leitores.	| Após uma troca finalizada, o leitor pode fazer a avaliação do outro leitor que tenha trocado seu(s) livro(s).
 | F13 	| Revisar dados cadastrais	| O leitor pode alterar seus dados cadastrais, com exceção do dado que o identifique, sendo esse o email ou o celular.
-| | | | 
 
 ## 9.	Requisitos não-funcionais
 | Código | Nome | Descrição | Categoria | Classificação |
@@ -73,4 +71,3 @@ Esse projeto consiste em um site voltado para a troca de livros que pretende fun
 | NF02	| Acesso somente com internet	| É necessário um acesso contínuo à Internet para poder acessar os dados do site e suas funcionalidades, como trocar produtos.	| Disponibilidade	| Obrigatório
 | NF03	| Criptografia das informações sensíveis aos usuários	| Senhas do usuário devem ser gravadas de forma criptografada no banco de dados	| Segurança	| Obrigatório
 | NF04	| Organização do conteúdo de forma objetiva	| O site apresentará o conteúdo de forma objetiva, de modo que o usuário encontre o desejado com facilidade.	| Usabilidade	| Obrigatório
-| | | | 
