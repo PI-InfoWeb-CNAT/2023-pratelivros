@@ -6,7 +6,7 @@
   - Pesquisa sobre os principais concorrentes
 
 ## 10/04/2023
-- *Apresentação do projeto*: 
+- *Apresentação da ideia do projeto*: 
   - Inclusão das recomendações gerais do professor-orientador ao projeto
   
 ## 16/04/2023
@@ -34,3 +34,19 @@
   - Definição dos atributos
   - Definição dos relacionamentos
   - Definição das cardinalidades
+  
+## 15/05/2023
+- *Desenvolvimento do Mapa do Site*: 
+  - Definição da estrutura da aplicação
+
+## 20/05/2023
+- *Desenvolvimento dos Prótotipos de Tela*: 
+  - Layout da página de Visitante
+  - Layout da página de Leitor
+  - Layout da página de Meu Perfil
+  - Layout da página de Minhas Prateleiras
+  - Layout da página de Proposta de Troca
+
+## 22/05/2023
+- *Apresentação do projeto*: 
+  - Inclusão das recomendações gerais do professor-orientador ao projeto
