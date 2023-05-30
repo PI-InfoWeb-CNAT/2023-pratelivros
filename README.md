@@ -15,14 +15,14 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 - Documentos
   - [Documento de visão](./docs/Documento_de_Visao.md)
   - Documento de Requisitos
-- Detalhamento de casos de uso 
-  - [Inserir produtos na cesta de compra](./docs/casos_de_uso/cdu_inserir_produtos_na_cesta_de_compra.md)
-  - [Visualizar produtos](./docs/casos_de_uso/cdu_visualizar_produtos.md)
-  - continua...
+- Documentação da arquitetura
 - Diagramas
   - [Diagrama de casos de uso](./docs/imagens/Diagrama_Casos_de_Uso.png)
   - [Diagrama de classes de domínio](./docs/diagramas/Diagrama_Entidades_e_Relacionamentos.png)
-- Documentação da arquitetura 
+- Detalhamento de casos de uso
+  - [Inserir produtos na cesta de compra](./docs/casos_de_uso/cdu_inserir_produtos_na_cesta_de_compra.md)
+  - [Visualizar produtos](./docs/casos_de_uso/cdu_visualizar_produtos.md)
+  - continua...
 
 ## Equipe do Projeto 📚
 | [<img src="https://avatars.githubusercontent.com/u/51339655?v=4" width=150><br><sub>George Azevedo</sub>](https://github.com/gasilvabr) |  [<img src="https://avatars.githubusercontent.com/u/105514249?v=4" width=150><br><sub>Felipe Gabriel</sub>](https://github.com/lipe0777) |  [<img src="https://avatars.githubusercontent.com/u/84422577?v=4" width=150><br><sub>Gabriel Ferreira</sub>](https://github.com/GabsFerrarii) | [<img src="https://avatars.githubusercontent.com/u/93940003?v=4" width=150><br><sub>Heitor Cossito</sub>](https://github.com/cossito) | [<img src="https://avatars.githubusercontent.com/u/93940387?v=4" width=150><br><sub>Lucas de Lima</sub>](https://github.com/monzadrifteiro) | [<img src="https://avatars.githubusercontent.com/u/79072631?v=4" width=150><br><sub>Pedro Saulo</sub>](https://github.com/Saulo-pedro) | 
