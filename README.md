@@ -18,7 +18,7 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 - Documentação da arquitetura
 - Diagramas
   - [Diagrama de casos de uso](./docs/imagens/Diagrama_Casos_de_Uso.png)
-  - [Diagrama de classes de domínio](./docs/diagramas/Diagrama_Entidades_e_Relacionamentos.png)
+  - [Diagrama de Entidades e Relacionamentos](./docs/imagens/Diagrama_Entidades_e_Relacionamentos.png)
 - Detalhamento de casos de uso
   - [Inserir produtos na cesta de compra](./docs/casos_de_uso/cdu_inserir_produtos_na_cesta_de_compra.md)
   - [Visualizar produtos](./docs/casos_de_uso/cdu_visualizar_produtos.md)
