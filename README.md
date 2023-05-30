@@ -14,16 +14,16 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 - [Reuniões da equipe](./reunioes/Reunioes.md)
 - Documentos
   - [Documento de visão](./docs/Documento_de_Visao.md)
-  - [Documento de Requisitos]()
+  - [Documento de requisitos]()
 - Documentação da arquitetura
 - Diagramas
   - [Diagrama de casos de uso](./docs/imagens/Diagrama_Casos_de_Uso.png)
-  - [Diagrama de Entidades e Relacionamentos](./docs/imagens/Diagrama_Entidades_e_Relacionamentos.png)
+  - [Diagrama de entidades e relacionamentos](./docs/imagens/Diagrama_Entidades_e_Relacionamentos.png)
 - Detalhamento de casos de uso
   - [Inserir produtos na cesta de compra](./docs/casos_de_uso/cdu_inserir_produtos_na_cesta_de_compra.md)
   - [Visualizar produtos](./docs/casos_de_uso/cdu_visualizar_produtos.md)
   - [continua...]()
-- [Mapa do Site](./docs/imagens/Mapa_do_Site.png)
+- [Mapa do site](./docs/imagens/Mapa_do_Site.png)
 - Prototipos de tela
   - [Layout's no Figma](https://www.figma.com/file/qNuHMiykoAfymAZzasnNwh/pratelivros---prot%C3%B3tipos-de-tela?type=design&node-id=0%3A1&t=B0D16kSUu4uzW5Dk-1)
   - [Apresentação em vídeo]()
