@@ -23,7 +23,7 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
   - [Inserir produtos na cesta de compra](./docs/casos_de_uso/cdu_inserir_produtos_na_cesta_de_compra.md)
   - [Visualizar produtos](./docs/casos_de_uso/cdu_visualizar_produtos.md)
   - continua...
-- [Mapa do Site]()
+- [Mapa do Site](./docs/imagens/Mapa_do_Site.png)
 - Prototipos de tela
   - [Layout's no Figma](https://www.figma.com/file/qNuHMiykoAfymAZzasnNwh/pratelivros---prot%C3%B3tipos-de-tela?type=design&node-id=0%3A1&t=B0D16kSUu4uzW5Dk-1)
   - Apresentação em vídeo
