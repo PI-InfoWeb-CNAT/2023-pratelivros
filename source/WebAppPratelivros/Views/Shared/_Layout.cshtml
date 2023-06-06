@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>pratelivros</title>
+    <link href="@Url.Content("~/Content/principal.css")" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,900&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html"><img src="/Content/imagens/logo.png" width="150" /></a>
+            </h1>
+            <form>
+                <input type="text" placeholder="Pesquise um livro..." id="pesquisa">
+            </form>
+        </div>
+        <div>
+            <button>
+                <img href="" src="/Content/imagens/icons/bell 2.png" />
+            </button>
+            <button>
+                <img href="" src="/Content/imagens/icons/more.png" />
+                <img href="" src="/Content/imagens/icons/Arrow 1 (Stroke).png" />
+            </button>
+            <div>
+                <img href="" src="/Content/imagens/icons/user 2.png" />
+                <img href="" src="/Content/imagens/icons/Arrow 1 (Stroke).png" />
+            </div>
+        </div>
+    </header>
+    <section>
+        @RenderBody()
+    </section>
+    <footer>
+        <p>© pratelivros</p>
+        <ul>
+            <li>
+                <a href=""><img src="/Content/imagens/icons/instagram.png" /></a>
+            </li>
+            <li>
+                <a href=""><img src="/Content/imagens/icons/twitter.png" /></a>
+            </li>
+            <li>
+                <a href=""><img src="/Content/imagens/icons/whatsapp.png" /></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

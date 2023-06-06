@@ -1,0 +1,37 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+header{
+    display: flex;
+    padding: 1.5em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2CDAC;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+header div form{
+    margin-left: 2em;
+}
+header div form input{
+    padding: 0.5em;
+    border-radius: 0.3em;
+    width: 30em;
+}
+header div button{
+    display: flex;
+    align-items: center;
+    margin: 1em;
+}
+section{
+    height: 50em;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2CDAC;
+    padding: 1em;
+}
