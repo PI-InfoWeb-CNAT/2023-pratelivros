@@ -50,3 +50,19 @@
 ## 22/05/2023
 - *Apresentação do projeto*: 
   - Inclusão das recomendações gerais do professor-orientador ao projeto
+
+## 28/05/2023
+- *Regularização do repositório do projeto*: 
+  - Inserção do mapa do site
+  - Inserção do diagrama de casos de uso
+  - Inserção do diagrama de entidades e relacionamentos
+  - Atualização do arquivo README do projeto
+
+## 05/06/2023
+- *Início da programação da aplicação*: 
+  - Criação das primeiras classes e códigos CSHTML 
+  - Criação das primeiras páginas do projeto em HTML e CSS
+
+## 12/06/2023
+- *Correção de erros e bugs presentes na página inicial do projeto*: 
+  - Correção do bug &#XFEFF
