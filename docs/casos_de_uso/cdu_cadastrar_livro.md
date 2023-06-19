@@ -8,7 +8,6 @@
 | 19/06/2023 | **1.00** | Primeira versão  | Gabriel FERREIRA |
 | 19/06/2023 | **2.00** | Correção ortográfica  | Lucas de LIMA |
 
-
 ### 1. Resumo 
 Este caso de uso permite que um leitor cadastre um livro no sistema.
 
@@ -35,7 +34,6 @@ Após a execução deste caso de uso, espera que o sistema:
 |4. O leitor insere os dados do livro a ser cadastrado | --- |
 |--- |5. O sistema valida e armazena os dados cadastrados |
 |6. O leitor é redirecionado para a página do livro que acabou de cadastrar | --- |
-
 
 #### 5.2. Fluxo de excessão 
 |  Ator  | Sistema |
