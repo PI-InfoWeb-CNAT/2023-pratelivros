@@ -39,7 +39,7 @@ Após a execução deste caso de uso, espera que o sistema:
 |  Ator  | Sistema |
 |:-------|:------- |
 |1. O leitor realiza o login na plataforma | --- |
-|2. O leitor aperta no botão "+" e e em seguida "Cadastrar livro" | --- |
+|2. O leitor aperta no botão "+" e em seguida "Cadastrar livro" | --- |
 | --- |3. O sistema redireciona o leito para a página de cadastro de livro | --- |
 |4. O leitor insere os dados do livro a ser cadastrado | --- |
 |--- |5. O sistema não valida os dados inseridos pelo leitor e exibe uma mensagem de erro |
