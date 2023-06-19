@@ -17,7 +17,7 @@ Este caso de uso permite que um leitor cadastre um livro no sistema.
 ### 3. Pré-condições
 São pré-condições para iniciar este caso de uso:
 - O leitor estar logado no sistema
-- O leitor apertar no botão "+" no cabeçalho do site
+- O leitor apertar no botão "+" e em seguida "Cadastrar livro" no cabeçalho do site
 
 ### 4. Pós-condições
 Após a execução deste caso de uso, espera que o sistema:
@@ -29,7 +29,7 @@ Após a execução deste caso de uso, espera que o sistema:
 |  Ator  | Sistema |
 |:-------|:------- |
 |1. O leitor realiza o login na plataforma | --- |
-|2. O leitor aperta no botão "+" | --- |
+|2. O leitor aperta no botão "+" e em seguida "Cadastrar livro" | --- |
 | --- |3. O sistema redireciona o leitor para a página de cadastro de livro | --- |
 |4. O leitor insere os dados do livro a ser cadastrado | --- |
 |--- |5. O sistema valida e armazena os dados cadastrados |
@@ -39,7 +39,7 @@ Após a execução deste caso de uso, espera que o sistema:
 |  Ator  | Sistema |
 |:-------|:------- |
 |1. O leitor realiza o login na plataforma | --- |
-|2. O leitor aperta no botão "+" | --- |
+|2. O leitor aperta no botão "+" e e em seguida "Cadastrar livro" | --- |
 | --- |3. O sistema redireciona o leito para a página de cadastro de livro | --- |
 |4. O leitor insere os dados do livro a ser cadastrado | --- |
 |--- |5. O sistema não valida os dados inseridos pelo leitor e exibe uma mensagem de erro |
