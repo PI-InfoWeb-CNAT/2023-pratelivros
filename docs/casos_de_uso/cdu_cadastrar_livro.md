@@ -30,7 +30,7 @@ Após a execução deste caso de uso, espera que o sistema:
 |:-------|:------- |
 |1. O leitor realiza o login na plataforma | --- |
 |2. O leitor aperta no botão "+" | --- |
-| --- |3. O sistema redireciona o leitor para a página de cadastro | --- |
+| --- |3. O sistema redireciona o leitor para a página de cadastro de livro | --- |
 |4. O leitor insere os dados do livro a ser cadastrado | --- |
 |--- |5. O sistema valida e armazena os dados cadastrados |
 |6. O leitor é redirecionado para a página do livro que acabou de cadastrar | --- |
@@ -40,7 +40,7 @@ Após a execução deste caso de uso, espera que o sistema:
 |:-------|:------- |
 |1. O leitor realiza o login na plataforma | --- |
 |2. O leitor aperta no botão "+" | --- |
-| --- |3. O sistema redireciona o leito para a página de cadastro | --- |
+| --- |3. O sistema redireciona o leito para a página de cadastro de livro | --- |
 |4. O leitor insere os dados do livro a ser cadastrado | --- |
 |--- |5. O sistema não valida os dados inseridos pelo leitor e exibe uma mensagem de erro |
 
