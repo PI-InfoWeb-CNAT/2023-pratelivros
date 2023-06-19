@@ -46,7 +46,7 @@ Após a execução deste caso de uso, espera que o sistema:
 
 ### 6. Protótipos de Interface
 #### 6.1. Página de cadastro de um livro
-![cadastro de livro](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/84422577/57df6ee0-5cac-42bb-b6a8-15f8b6fab83b)
+![cadastro de livro](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/93940387/3c725794-11be-41c9-838a-6481d6221992)
 
 #### 6.2. Página de visualização dos detalhes de um livro
 ![detalhes do livro](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/84422577/9b85d29a-28b6-4527-a857-a5514be31a39)
