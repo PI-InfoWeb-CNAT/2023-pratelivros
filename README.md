@@ -20,8 +20,8 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
   - [Diagrama de casos de uso](./docs/imagens/Diagrama_Casos_de_Uso.png)
   - [Diagrama de entidades e relacionamentos](./docs/imagens/Diagrama_Entidades_e_Relacionamentos.png)
 - Detalhamento de casos de uso
-  - [Inserir produtos na cesta de compra](./docs/casos_de_uso/cdu_inserir_produtos_na_cesta_de_compra.md)
-  - [Visualizar produtos](./docs/casos_de_uso/cdu_visualizar_produtos.md)
+  - [Realizar cadastro](./docs/casos_de_uso/cdu_realizar_cadastro.md)
+  - [Cadastrar livro](./docs/casos_de_uso/cdu_cadastrar_livro.md)
   - [continua...]()
 - [Mapa do site](./docs/imagens/Mapa_do_Site.png)
 - Prototipos de tela
