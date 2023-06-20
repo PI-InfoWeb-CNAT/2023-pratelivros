@@ -21,6 +21,7 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
   - [Diagrama de entidades e relacionamentos](./docs/imagens/Diagrama_Entidades_e_Relacionamentos.png)
 - Detalhamento de casos de uso
   - [Realizar cadastro](./docs/casos_de_uso/cdu_realizar_cadastro.md)
+  - [Realizar login](./docs/casos_de_uso/cdu_realizar_login.md)
   - [Cadastrar livro](./docs/casos_de_uso/cdu_cadastrar_livro.md)
   - [continua...]()
 - [Mapa do site](./docs/imagens/Mapa_do_Site.png)
