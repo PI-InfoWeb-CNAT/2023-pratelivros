@@ -52,7 +52,7 @@ Após a execução deste caso de uso, espera que o sistema:
 #### 6.2. Página de login
 ![pagina de login](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/93940387/83a6e044-3297-46fa-9c2f-619401cd2b8f)
 
-#### 6.2. Página inicial de usuário autenticado
+#### 6.3. Página inicial de usuário autenticado
 ![pagina inicial autenticado](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/93940387/c971e836-28e0-43a0-9abf-546a1d15ce08)
 
 ### 7. Diagrama de classe de domínio usados neste caso de uso
