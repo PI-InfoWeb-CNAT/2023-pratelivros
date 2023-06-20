@@ -41,11 +41,11 @@
 
 ## 20/05/2023
 - *Desenvolvimento dos Prótotipos de Tela*: 
-  - Layout da página de Visitante
-  - Layout da página de Leitor
-  - Layout da página de Meu Perfil
-  - Layout da página de Minhas Prateleiras
-  - Layout da página de Proposta de Troca
+  - Layout da página Visitante
+  - Layout da página Leitor
+  - Layout da página Meu Perfil
+  - Layout da página Minhas Prateleiras
+  - Layout da página Proposta de Troca
 
 ## 22/05/2023
 - *Apresentação do projeto*: 
@@ -66,3 +66,13 @@
 ## 12/06/2023
 - *Correção de erros e bugs presentes na página inicial do projeto*: 
   - Correção do bug &#XFEFF
+
+## 17/06/2023
+- *Correções gerais e início do desenvolvimento do Diagrama Intermediário de Entidade e Relacionamentos*:
+  - Criação da versão inicial do diagrama no ERDPLUS
+
+## 19/06/2023
+- *Detalhamento e HTML/CSS de 3 casos de uso*:
+  - Realizar cadastro
+  - Realizar login
+  - Cadastrar livro
