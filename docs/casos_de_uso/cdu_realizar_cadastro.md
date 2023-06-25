@@ -29,7 +29,7 @@ Após a execução deste caso de uso, espera que o sistema:
 |:-------|:------- |
 |1. O visitante aperta no botão "Cadastrar-se" | --- |
 | --- |2. O sistema redireciona o visitante para a página de cadastro de usuário | --- |
-|3. O visitante insere e submete os seus dados (Nome, Username, E-mail, Senha, Data de Nascimento e Gênero) | --- |
+|3. O visitante insere os seus dados (Nome, Username, E-mail, Senha, Data de Nascimento e Gênero) e clica em "Criar conta" | --- |
 |--- |4. O sistema valida e armazena os dados cadastrados |
 |5. O visitante é redirecionado para a página inicial de leitor | --- |
 
