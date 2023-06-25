@@ -35,37 +35,30 @@ Após a execução deste caso de uso, espera que o sistema:
 |5. O usuário, já autenticado, é redirecionado para a página inicial | --- |
 
 #### 5.2. Fluxo de excessão
+
 ##### 5.2.1 E-mail em branco
 |  Ator  | Sistema |
 |:-------|:------- |
-|1. O usuário aperta no botão "Login" | --- |
-| --- |2. O sistema redireciona o usuário para a página de login | --- |
 |3. O usuário não insere seu E-mail e clica em "Login" | --- |
 |--- |4. O sistema não valida os dados inseridos pelo usuário e exibe uma mensagem de erro ("O campo 'E-mail' é obrigatório") |
 
 ##### 5.2.2 Senha em branco
 |  Ator  | Sistema |
 |:-------|:------- |
-|1. O usuário aperta no botão "Login" | --- |
-| --- |2. O sistema redireciona o usuário para a página de login | --- |
 |3. O usuário não insere sua Senha e clica em "Login" | --- |
 |--- |4. O sistema não valida os dados inseridos pelo usuário e exibe uma mensagem de erro ("O campo 'Senha' é obrigatório") |
 
 ##### 5.2.3 E-mail incorreto
 |  Ator  | Sistema |
 |:-------|:------- |
-|1. O usuário aperta no botão "Login" | --- |
-| --- |2. O sistema redireciona o usuário para a página de login | --- |
 |3. O usuário insere seu E-mail incorretamente | --- |
-|--- |4. O sistema não valida os dados inseridos pelo usuário e exibe uma mensagem de erro ("Não foi possível validar essas credenciais, altere os dados e tente novamente") |
+|--- |4. O sistema não valida os dados inseridos pelo usuário e exibe uma mensagem de erro ("Este não é um endereço de E-mail válido. Altere os dados e tente novamente") |
 
-##### 5.2.3 Senha incorreta
+##### 5.2.4 Senha incorreta
 |  Ator  | Sistema |
 |:-------|:------- |
-|1. O usuário aperta no botão "Login" | --- |
-| --- |2. O sistema redireciona o usuário para a página de login | --- |
 |3. O usuário insere sua Senha incorretamente | --- |
-|--- |4. O sistema não valida os dados inseridos pelo usuário e exibe uma mensagem de erro ("Não foi possível validar essas credenciais, altere os dados e tente novamente") |
+|--- |4. O sistema não valida os dados inseridos pelo usuário e exibe uma mensagem de erro ("Senha incorreta. Altere os dados e tente novamente") |
 
 ### 6. Protótipos de Interface
 #### 6.1. Página inicial do sistema
@@ -81,9 +74,9 @@ Após a execução deste caso de uso, espera que o sistema:
 `A ser desenvolvido pelo aluno.`
 
 ### 8. Dicionário de dados
-- E-mail: Uma cadeia de caracteres 
-- Senha: Uma cadeia de caracteres tamanho 15
+- E-mail - Uma cadeia de caracteres alfanuméricos tamanho 30
+- Senha - Uma cadeia de caracteres alfanuméricos tamanho 15
 
 ### 9. Regras de negócio
-- E-mail: Não pode possuir caracteres especiais além do ponto e deve conter, respectivamente, um conjunto de caracteres alfanuméricos, um arroba, outro conjunto de letras e um ou mais domínios de topo
-- Senha: Deve possuir no mínimo: oito caracteres alfanuméricos, sendo incluso um número, um caractere especial, uma letra maiúscula e uma minúscula
+- E-mail - Um conjunto de caracteres (com exceção dos caracteres especiais, sendo permitido apenas o ponto) seguidos, respectivamente, por um arroba, outro conjunto de letras e um ou mais domínios de topo
+- Senha - Mínimo de 8 caracteres; pelo menos uma letra maiúscula e minúscula; um número; um caractere especial
