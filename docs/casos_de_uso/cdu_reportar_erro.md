@@ -25,7 +25,7 @@ Após a execução deste caso de uso, espera que o sistema:
 #### 5.1. Fluxo Principal 
 |  Ator  | Sistema |
 |:-------|:------- |
-|1. O usuário coloca suas credenciais (nome e e-mail), seleciona o tipo de problema, o descreve e clica em "Enviar" | --- |
+|1. O usuário coloca suas credenciais (Nome e E-mail), seleciona o tipo de problema, o descreve e clica em "Enviar" | --- |
 | --- |2. O sistema registra as informações cadastradas pelo usuário e as manda ao e-mail de todos os moderadores | --- |
 
 #### 5.2. Fluxo de excessão
