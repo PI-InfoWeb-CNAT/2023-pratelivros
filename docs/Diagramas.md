@@ -16,6 +16,6 @@
 
 ![Entidades e Relacionamentos](imagens/Diagrama_Entidades_e_Relacionamentos.png)
 
-## 3. Diagrama Intermediário de entidades e relacionamentos
+## 3. Diagrama intermediário de entidades e relacionamentos
 
 ![Entidades e Relacionamentos Intermediário](imagens/Diagrama_Entidades_e_Relacionamentos_Intermediário.png)
