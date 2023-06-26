@@ -120,6 +120,9 @@ Após a execução deste caso de uso, espera que o sistema:
 #### 6.2. Página de cadastro de usuário
 ![pagina de cadastro de usuario](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/93940387/a1b105ce-2153-4a69-a54e-2fc428912acd)
 
+#### 6.3. Página inicial de usuário autenticado
+![pagina inicial autenticado](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/93940387/c971e836-28e0-43a0-9abf-546a1d15ce08)
+
 ### 7. Diagrama de classe de domínio usados neste caso de uso
 `A ser desenvolvido pelo aluno.`
 
