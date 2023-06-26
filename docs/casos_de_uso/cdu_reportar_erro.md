@@ -16,17 +16,19 @@ Este caso de uso permite que um usuário reporte um erro no sistema
 
 ### 3. Pré-condições
 São pré-condições para iniciar este caso de uso:
+- Não possui
 
 ### 4. Pós-condições
 Após a execução deste caso de uso, espera que o sistema:
+- Não possui
 
 ### 5. Fluxos de evento
 
 #### 5.1. Fluxo Principal 
 |  Ator  | Sistema |
 |:-------|:------- |
-|1. O usuário coloca suas credenciais (Nome e E-mail), seleciona o tipo de problema, o descreve e clica em "Enviar" | --- |
-| --- |2. O sistema registra as informações cadastradas pelo usuário e as manda ao e-mail de todos os moderadores | --- |
+|1. O usuário insere suas credenciais (Nome e E-mail), seleciona o tipo de problema, o descreve e clica em "Enviar" | --- |
+| --- |2. O sistema registra as informações cadastradas pelo usuário e as envia ao e-mail de todos os moderadores | --- |
 
 #### 5.2. Fluxo de excessão
 
