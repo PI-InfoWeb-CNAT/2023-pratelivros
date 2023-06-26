@@ -1,0 +1,52 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Login - pratelivros</title>
+    <link rel="stylesheet" href="@Url.Content("~/Content/principal.css")" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center h-screen">
+    <div class="login-box bg-color1">
+        <header class="flex justify-center m-4">
+            <h1 class="flex justify-center">
+                <a href="@Url.Action("Index", "Home")"><img src="~/Content/imagens/logo.png" width="150" /></a>
+            </h1>
+        </header>
+        <main class="flex flex-col items-left m-4">
+            <form action="@Url.Action("Index", "Leitor")" class="flex flex-col items-center">
+                <input type="email" placeholder="E-mail" class="w-4/5 my-4 border-none" />
+                <input type="password" placeholder="Senha" class="w-4/5 my-4 border-none" />
+                <a class="mr-80 ml-3 hover:underline font-bold" href="#">Esqueceu sua senha?</a>
+                <input class="hover:cursor-pointer" type="submit" />
+            </form>
+        </main>
+        <footer>
+            <small class="font-bold">© pratelivros</small>
+            <ul>
+                <li>
+                    <a href=""><img src="~/Content/imagens/icons/instagram.png" /></a>
+                </li>
+                <li>
+                    <a href=""><img src="~/Content/imagens/icons/twitter.png" /></a>
+                </li>
+                <li>
+                    <a href=""><img src="~/Content/imagens/icons/whatsapp.png" /></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

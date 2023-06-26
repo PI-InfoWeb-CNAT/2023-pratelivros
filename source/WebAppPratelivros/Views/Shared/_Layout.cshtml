@@ -1,36 +1,120 @@
 ﻿<!DOCTYPE html>
-
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8">
     <title>pratelivros</title>
-    <link href="@Url.Content("~/Content/principal.css")" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/principal.css")" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function abrir_plus() {
+            if (document.getElementById('menu1').style.visibility == 'visible') {
+                document.getElementById('menu1').style.visibility = 'hidden';
+            }
+
+            else {
+                document.getElementById('menu1').style.visibility = 'visible';
+                document.getElementById('menu2').style.visibility = 'hidden';
+                document.getElementById('menu3').style.visibility = 'hidden';
+
+            }
+
+        }
+
+        function abrir_perfil() {
+            if (document.getElementById('menu2').style.visibility == 'visible') {
+                document.getElementById('menu2').style.visibility = 'hidden';
+            }
+
+            else {
+                document.getElementById('menu2').style.visibility = 'visible';
+                document.getElementById('menu1').style.visibility = 'hidden';
+                document.getElementById('menu3').style.visibility = 'hidden';
+            }
+
+        }
+
+        function abrir_notif() {
+            if (document.getElementById('menu3').style.visibility == 'visible') {
+                document.getElementById('menu3').style.visibility = 'hidden';
+            }
+
+            else {
+                document.getElementById('menu3').style.visibility = 'visible';
+                document.getElementById('menu1').style.visibility = 'hidden';
+                document.getElementById('menu2').style.visibility = 'hidden';
+            }
+
+        }
+    </script>
 </head>
+
 <body>
     <header>
         <div>
             <h1>
-                <a href="index.html"><img src="/Content/imagens/logo.png" width="150px" /></a>
+                <a href="index.html"><img src="~/Content/imagens/logo.png" width="150px" /></a>
             </h1>
             <form>
                 <input type="text" placeholder="Pesquise um livro..." id="pesquisa">
             </form>
         </div>
         <div>
-            <button>
-                <img href="" src="/Content/imagens/icons/bell 2.png" />
+            <button onclick="abrir_notif()">
+                <div>
+                    <img href="" src="~/Content/imagens/icons/bell 2.png" />
+                </div>
+                <ol id="menu3" class="right-48 w-96">
+                    <li class="notif">
+                        <a href="">
+                            <figure>
+                                <img src="~/Content/imagens/icons/user 3.png" />
+                            </figure>
+                            <p><b>Lucas de Lima</b> te enviou uma proposta!</p>
+                        </a>
+                    </li>
+                    <li class="notif">
+                        <a href="">
+                            <figure>
+                                <img src="~/Content/imagens/icons/user 4.png" />
+                            </figure>
+                            <p><b>Lucas de Lima</b> te enviou uma proposta!</p>
+                        </a>
+                    </li>
+                    <li class="notif">
+                        <a href="">
+                            <figure>
+                                <img src="~/Content/imagens/icons/user 5.png" />
+                            </figure>
+                            <p><b>Akira Vitor</b> te enviou uma proposta!</p>
+                        </a>
+                    </li>
+                    <li><a href="">Ver mais</a></li>
+                </ol>
             </button>
-            <button>
-                <img href="" src="/Content/imagens/icons/plus-icon.png" />
-                <img href="" src="/Content/imagens/icons/Arrow 1 (Stroke).png" class="seta" />
+            <button onclick="abrir_plus()">
+                <div>
+                    <img src="~/Content/imagens/icons/plus-icon.png" />
+                    <img href="" src="~/Content/imagens/icons/Arrow 1 (Stroke).png" class="seta" />
+                </div>
+                <ol id="menu1" class="right-32">
+                    <li><a href="cadastrar-livro.html">Cadastrar livro</a></li>
+                    <li><a href="">Criar prateleira</a></li>
+                </ol>
             </button>
-            <button>
-                <img href="" src="/Content/imagens/icons/user 2.png" class="user" />
-                <img href="" src="/Content/imagens/icons/Arrow 1 (Stroke).png" class="seta" />
+            <button onclick="abrir_perfil()" class="perfil">
+                <div>
+                    <img href="" src="~/Content/imagens/icons/user 2.png" class="user" />
+                    <img href="" src="~/Content/imagens/icons/Arrow 1 (Stroke).png" class="seta" />
+                </div>
+                <ol id="menu2" class="right-10">
+                    <li><a href="meu-perfil.html">Meu perfil</a></li>
+                    <li><a href="">Minhas prateleiras</a></li>
+                    <li><a href="">Sair</a></li>
+                </ol>
             </button>
         </div>
     </header>
@@ -41,13 +125,13 @@
         <small class="font-bold">© pratelivros</small>
         <ul>
             <li>
-                <a href=""><img src="/Content/imagens/icons/instagram.png" /></a>
+                <a href=""><img src="~/Content/imagens/icons/instagram.png" /></a>
             </li>
             <li>
-                <a href=""><img src="/Content/imagens/icons/twitter.png" /></a>
+                <a href=""><img src="~/Content/imagens/icons/twitter.png" /></a>
             </li>
             <li>
-                <a href=""><img src="/Content/imagens/icons/whatsapp.png" /></a>
+                <a href=""><img src="~/Content/imagens/icons/whatsapp.png" /></a>
             </li>
         </ul>
     </footer>
