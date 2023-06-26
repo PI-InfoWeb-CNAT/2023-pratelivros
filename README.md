@@ -23,8 +23,8 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 - Detalhamento de casos de uso
   - [Realizar cadastro](./docs/casos_de_uso/cdu_realizar_cadastro.md)
   - [Realizar login](./docs/casos_de_uso/cdu_realizar_login.md)
-  - [Cadastrar livro](docs/casos_de_uso/cdu_cadastrar_livro.md)
-  - [Reportar erro](.docs/casos_de_uso/cdu_reportar_erro.md)
+  - [Cadastrar livro](./docs/casos_de_uso/cdu_cadastrar_livro.md)
+  - [Reportar erro](./docs/casos_de_uso/cdu_reportar_erro.md)
   - [continua...]()
 - [Mapa do site](./docs/imagens/Mapa_do_Site.png)
 - Prototipos de tela
