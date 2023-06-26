@@ -56,7 +56,7 @@
     <header>
         <div>
             <h1>
-                <a href="index.html"><img src="~/Content/imagens/logo.png" width="150px" /></a>
+                <a href="@Url.Action("Index", "Leitor")"><img src="~/Content/imagens/logo.png" width="150px" /></a>
             </h1>
             <form>
                 <input type="text" placeholder="Pesquise um livro..." id="pesquisa">
@@ -113,7 +113,7 @@
                 <ol id="menu2" class="right-10">
                     <li><a href="meu-perfil.html">Meu perfil</a></li>
                     <li><a href="">Minhas prateleiras</a></li>
-                    <li><a href="">Sair</a></li>
+                    <li><a href="@Url.Action("Index", "Home")">Sair</a></li>
                 </ol>
             </button>
         </div>
