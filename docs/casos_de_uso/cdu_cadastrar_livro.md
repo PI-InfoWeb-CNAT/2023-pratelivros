@@ -7,6 +7,7 @@
 |:-------|:-------|:----------|:------|
 | 19/06/2023 | **1.00** | Primeira versão  | Gabriel FERREIRA |
 | 19/06/2023 | **2.00** | Correção ortográfica  | Lucas de LIMA |
+| 25/06/2023 | **3.00** |  Correção e criação dos tópicos 8 e 9  | Lucas de LIMA |
 
 ### 1. Resumo 
 Este caso de uso permite que um leitor cadastre um livro no sistema.
