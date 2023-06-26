@@ -75,7 +75,7 @@ Após a execução deste caso de uso, espera que o sistema:
 
 ### 8. Dicionário de dados
 - E-mail - Uma cadeia de caracteres alfanuméricos tamanho 30
-- Senha - Uma cadeia de caracteres alfanuméricos tamanho 15
+- Senha - Uma cadeia de caracteres alfanuméricos tamanho 20
 
 ### 9. Regras de negócio
 - E-mail - Um conjunto de caracteres (com exceção dos caracteres especiais, sendo permitido apenas o ponto) seguidos, respectivamente, por um arroba, outro conjunto de letras e um ou mais domínios de topo
