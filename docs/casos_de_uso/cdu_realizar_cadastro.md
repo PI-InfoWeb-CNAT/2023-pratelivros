@@ -125,9 +125,9 @@ Após a execução deste caso de uso, espera que o sistema:
 
 ### 8. Dicionário de dados
 - Nome - Uma cadeia de caracteres alfabéticos tamanho 30
-- Username - Uma cadeia de caracteres alfanuméricos tamanho 30
+- Username - Uma cadeia de caracteres alfanuméricos tamanho 15
 - E-mail - Uma cadeia de caracteres alfanuméricos tamanho 30
-- Senha - Uma cadeia de caracteres alfanuméricos tamanho 15
+- Senha - Uma cadeia de caracteres alfanuméricos tamanho 20
 - Data de Nascimento - Data do calendário em modelo DD/MM/AAAA
 - Gênero - "Masculino", "Feminino" ou "Outro"
 
@@ -137,4 +137,3 @@ Após a execução deste caso de uso, espera que o sistema:
 - E-mail - Um conjunto de caracteres (com exceção dos caracteres especiais, sendo permitido apenas o ponto) seguidos, respectivamente, por um arroba, outro conjunto de letras e um ou mais domínios de topo
 - Senha - Mínimo de 8 caracteres; pelo menos uma letra maiúscula e minúscula; um número; um caractere especial
 - Data de Nascimento - O valor de AAAA deve estar entre 1905 e 2023
-- Gênero - Não possui
