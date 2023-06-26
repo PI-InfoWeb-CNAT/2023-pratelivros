@@ -40,9 +40,9 @@
   - Definição da estrutura da aplicação
 
 ## 20/05/2023
-- *Desenvolvimento dos Prótotipos de Tela*: 
-  - Layout da página Visitante
-  - Layout da página Leitor
+- *Desenvolvimento dos prótotipos de tela*: 
+  - Layout da página Home - Visitante
+  - Layout da página Home - Leitor
   - Layout da página Meu Perfil
   - Layout da página Minhas Prateleiras
   - Layout da página Proposta de Troca
@@ -76,3 +76,9 @@
   - Realizar cadastro
   - Realizar login
   - Cadastrar livro
+
+## 25/06/2023
+- *Correções gerais*:
+  - Diagrama de casos de uso
+  - Detalhamentos casos de uso
+  - Página Home - Leitor
