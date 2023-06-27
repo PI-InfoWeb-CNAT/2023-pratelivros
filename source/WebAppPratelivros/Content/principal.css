@@ -95,8 +95,7 @@ header div button ol {
 }
 
 .notif {
-  background-color: #F2CDAC;
-  margin-bottom: 1em;
+  background-color: #FFFF;
   padding: 1em;
   border-radius: 0.3em;
 }
@@ -330,4 +329,8 @@ form input[type=submit] {
 .radio input:checked+span:after {
   opacity: 1;
   transform: scale(1, 1);
+}
+
+#menu3{
+  width: 25rem;
 }

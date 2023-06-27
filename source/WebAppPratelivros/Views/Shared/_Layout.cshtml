@@ -4,59 +4,19 @@
 <head>
     <meta charset="utf-8">
     <title>pratelivros</title>
-    <link rel="stylesheet" href="@Url.Content("~/Content/principal.css")" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="@Url.Content("~/Content/principal.css")" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,900&display=swap">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        function abrir_plus() {
-            if (document.getElementById('menu1').style.visibility == 'visible') {
-                document.getElementById('menu1').style.visibility = 'hidden';
-            }
-
-            else {
-                document.getElementById('menu1').style.visibility = 'visible';
-                document.getElementById('menu2').style.visibility = 'hidden';
-                document.getElementById('menu3').style.visibility = 'hidden';
-
-            }
-
-        }
-
-        function abrir_perfil() {
-            if (document.getElementById('menu2').style.visibility == 'visible') {
-                document.getElementById('menu2').style.visibility = 'hidden';
-            }
-
-            else {
-                document.getElementById('menu2').style.visibility = 'visible';
-                document.getElementById('menu1').style.visibility = 'hidden';
-                document.getElementById('menu3').style.visibility = 'hidden';
-            }
-
-        }
-
-        function abrir_notif() {
-            if (document.getElementById('menu3').style.visibility == 'visible') {
-                document.getElementById('menu3').style.visibility = 'hidden';
-            }
-
-            else {
-                document.getElementById('menu3').style.visibility = 'visible';
-                document.getElementById('menu1').style.visibility = 'hidden';
-                document.getElementById('menu2').style.visibility = 'hidden';
-            }
-
-        }
-    </script>
+    <script src="~/Content/main.js"></script>
 </head>
 
 <body>
     <header>
         <div>
             <h1>
-                <a href="@Url.Action("Index", "Leitor")"><img src="~/Content/imagens/logo.png" width="150px" /></a>
+                <a href="@Url.Action("Index", "Leitor")"><img src="~/Content/imagens/logo.png" width="150" /></a>
             </h1>
             <form>
                 <input type="text" placeholder="Pesquise um livro..." id="pesquisa">
@@ -67,11 +27,11 @@
                 <div>
                     <img href="" src="~/Content/imagens/icons/bell 2.png" />
                 </div>
-                <ol id="menu3" class="right-48 w-96">
+                <ol id="menu3" class="right-48 bg-white border-color2 p-0">
                     <li class="notif">
                         <a href="">
                             <figure>
-                                <img src="~/Content/imagens/icons/user 3.png" />
+                                <img src="~/Content/imagens/icons/user 3.png" width="30" />
                             </figure>
                             <p><b>Lucas de Lima</b> te enviou uma proposta!</p>
                         </a>
@@ -79,7 +39,7 @@
                     <li class="notif">
                         <a href="">
                             <figure>
-                                <img src="~/Content/imagens/icons/user 4.png" />
+                                <img src="~/Content/imagens/icons/user 4.png" width="30" />
                             </figure>
                             <p><b>Lucas de Lima</b> te enviou uma proposta!</p>
                         </a>
@@ -87,12 +47,12 @@
                     <li class="notif">
                         <a href="">
                             <figure>
-                                <img src="~/Content/imagens/icons/user 5.png" />
+                                <img src="~/Content/imagens/icons/user 5.png" width="30" />
                             </figure>
                             <p><b>Akira Vitor</b> te enviou uma proposta!</p>
                         </a>
                     </li>
-                    <li><a href="">Ver mais</a></li>
+                    <li class="font-bold text-center w-full text-white bg-color2 py-2 hover:underline"><a href="">Ver mais</a></li>
                 </ol>
             </button>
             <button onclick="abrir_plus()">
@@ -100,9 +60,9 @@
                     <img src="~/Content/imagens/icons/plus-icon.png" />
                     <img href="" src="~/Content/imagens/icons/Arrow 1 (Stroke).png" class="seta" />
                 </div>
-                <ol id="menu1" class="right-32">
-                    <li><a href="cadastrar-livro.html">Cadastrar livro</a></li>
-                    <li><a href="">Criar prateleira</a></li>
+                <ol id="menu1" class="right-32 bg-white border-color2 font-bold">
+                    <li class="hover:underline mb-3"><a class="flex" href="cadastrar-livro.html"><img class="self-center mr-2" src="Content/imagens/icons/livro-icon.png" /> Cadastrar livro</a></li>
+                    <li class="hover:underline"><a class="flex" href=""><img class="self-center mr-2" src="~/Content/imagens/icons/prateleira-icon.svg" width="18" height="18"/> Criar prateleira</a></li>
                 </ol>
             </button>
             <button onclick="abrir_perfil()" class="perfil">
@@ -110,10 +70,10 @@
                     <img href="" src="~/Content/imagens/icons/user 2.png" class="user" />
                     <img href="" src="~/Content/imagens/icons/Arrow 1 (Stroke).png" class="seta" />
                 </div>
-                <ol id="menu2" class="right-10">
-                    <li><a href="meu-perfil.html">Meu perfil</a></li>
-                    <li><a href="">Minhas prateleiras</a></li>
-                    <li><a href="@Url.Action("Index", "Home")">Sair</a></li>
+                <ol id="menu2" class="right-10 bg-white border-color2 font-bold">
+                    <li class="hover:underline mb-3"><a href="meu-perfil.html">Meu perfil</a></li>
+                    <li class="hover:underline mb-3"><a href="">Minhas prateleiras</a></li>
+                    <li class="text-red-500 hover:underline"><a href="@Url.Action("Index", "Home")">Sair</a></li>
                 </ol>
             </button>
         </div>
