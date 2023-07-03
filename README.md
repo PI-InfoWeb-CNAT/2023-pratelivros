@@ -19,7 +19,8 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 - Diagramas
   - [Diagrama de casos de uso](./docs/imagens/Diagrama_Casos_de_Uso.png)
   - [Diagrama de entidades e relacionamentos](./docs/imagens/Diagrama_Entidades_e_Relacionamentos.png)
-  - [Diagrama intermediário de entidades e relacionamentos](./docs/imagens/Diagrama_Entidades_e_Relacionamentos_Intermediário.png)
+  - [Diagrama intermediário de entidades e relacionamentos](./docs/imagens/Diagrama_Intermediario_Entidades_e_Relacionamentos.png)
+  - [Diagrama relacional de entidades e relacionamentos](./docs/imagens/Diagrama_Relacional_Entidades_e_Relacionamentos.png)
 - Detalhamento de casos de uso
   - [Realizar cadastro](./docs/casos_de_uso/cdu_realizar_cadastro.md)
   - [Realizar login](./docs/casos_de_uso/cdu_realizar_login.md)
