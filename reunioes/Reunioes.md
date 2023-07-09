@@ -55,7 +55,7 @@
 - *Regularização do repositório do projeto*: 
   - Inserção do mapa do site
   - Inserção do diagrama de casos de uso
-  - Inserção do diagrama de entidades e relacionamentos
+  - Inserção do diagrama de entidade-relacionamento
   - Atualização do arquivo README do projeto
 
 ## 05/06/2023
@@ -68,7 +68,7 @@
   - Correção do bug &#XFEFF
 
 ## 17/06/2023
-- *Correções gerais e início do desenvolvimento do Diagrama Intermediário de Entidade e Relacionamentos*:
+- *Correções gerais e início do desenvolvimento do Diagrama Intermediário de Entidade-Relacionamento*:
   - Criação da versão inicial do diagrama no ERDPLUS
 
 ## 19/06/2023
@@ -82,3 +82,16 @@
   - Diagrama de casos de uso
   - Detalhamentos casos de uso
   - Página Home - Leitor
+
+## 26/06/2023
+- *Regularização do repositório do projeto*:
+  - Correção nos detalhamentos de casos de uso
+  - Atualização do README do repositório
+  - Inserção do diagrama intermediário de entidade-relacionamento
+  - Inserção do diagrama relacional de entidade-relacionamento
+  - Inserção das primeiras páginas HTML/CSS no projeto do Visual Studio 2019
+
+## 03/07/2023
+- *Correções gerais*:
+  - Correção no diagrama intermediário de entidade-relacionamento
+  - Correção no diagrama relacional de entidade-relacionamento
