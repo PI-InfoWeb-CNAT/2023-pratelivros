@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/93940387/9caee244-cec7-4a76-ba49-64c421d0a77a" width="280" alt="Logo do pratelivros" />
+   <img src="https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/93940387/993b72f8-7822-4fa2-8223-7f46fe4d40a7"/> 
 </div>
 
 ## Ideia Geral 💭
