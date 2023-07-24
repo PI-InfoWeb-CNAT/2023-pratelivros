@@ -1,4 +1,7 @@
-﻿@{
+﻿@model WebAppPratelivros.Models.Leitor
+
+@{
+    ViewBag.Title = "Cadastro";
     Layout = null;
 }
 
@@ -20,35 +23,43 @@
     <div class="cadastro-box bg-color1">
         <header class="flex justify-center m-4">
             <h1 class="flex justify-center">
-                <a href="@Url.Action("Index", "Home")"><img src="~/Content/imagens/logo.png" width="150"/></a>
+                <a href="@Url.Action("Index", "Home")"><img src="~/Content/imagens/logo.png" width="150" /></a>
             </h1>
         </header>
         <main class="flex flex-col items-left mx-4">
-            <form action="@Url.Action("Index", "Leitor")" class="flex flex-col items-center">
-                <input type="text" placeholder="Nome" class="w-4/5 mb-3 border-none" />
-                <input type="text" placeholder="Username" class="w-4/5 mb-3 border-none" />
-                <input type="email" placeholder="E-mail" class="w-4/5 mb-3 border-none" />
-                <input type="password" placeholder="Senha" class="w-4/5 mb-3 border-none" />
+            @using (Html.BeginForm("Cadastro", "Leitor", FormMethod.Post, new { @class = "flex flex-col items-center" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.EditorFor(model => model.nome, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "Nome", @type = "text" } })
+                @Html.EditorFor(model => model.username, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "Username", @type = "text" } })
+                @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "E-mail", @type = "text" } })
+                @Html.EditorFor(model => model.senha, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "Senha", @type = "password" } })
                 <div class="flex justify-between w-4/5 mt-2">
-                    <input type="tel" placeholder="Celular (opcional)" class="m-0 border-none cadastroInput" />
-                    <input placeholder="Data de nascimento" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="dataNasc" class="m-0 cadastroInput border-none" />
+                    @Html.EditorFor(model => model.celular, new { htmlAttributes = new { @class = "m-0 border-none cadastroInput", @placeholder = "Celular (opcional)", @type = "tel" } })
+                    @Html.EditorFor(model => model.idade, new { htmlAttributes = new { @class = "m-0 cadastroInput border-none", @placeholder = "Idade", @type = "text", @onfocus = "this.type='date'", @onblur = "this.type='text'" } })
                 </div>
                 <div class="flex items-center mt-6">
                     <label class="radio mx-2 font-bold flex justify-center items-center">
-                        <input name="radio" type="radio">
+                        @Html.EditorFor(model => model.genero, new { htmlAttributes = new { @type = "radio" } })
                         <span>Masculino</span>
                     </label>
                     <label class="radio mx-2 font-bold flex justify-center items-center">
-                        <input name="radio" type="radio">
+                        @Html.EditorFor(model => model.genero, new { htmlAttributes = new { @type = "radio" } })
                         <span>Feminino</span>
                     </label>
                     <label class="radio mx-2 font-bold flex justify-center items-center">
-                        <input name="radio" type="radio">
+                        @Html.EditorFor(model => model.genero, new { htmlAttributes = new { @type = "radio" } })
                         <span>Outro</span>
                     </label>
                 </div>
                 <input class="hover:cursor-pointer" type="submit" value="Continuar" />
-            </form>
+            }
+            @section ScriptPage {
+                <script src="~/Scripts/jquery.validate.min.js">
+                </script>
+                <script src="~/Scripts/jquery.validate.unobtrusive.min.js">
+                </script>
+            }
         </main>
         <footer>
             <small class="font-bold">© pratelivros</small>
