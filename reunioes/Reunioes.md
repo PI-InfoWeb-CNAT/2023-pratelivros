@@ -95,3 +95,14 @@
 - *Correções gerais*:
   - Correção no diagrama intermediário de entidade-relacionamento
   - Correção no diagrama relacional de entidade-relacionamento
+
+## 10/07/2023
+- *Correções para o Banco de Dados*:
+  - Criação do dicionário de dados utilizando Google Planilhas
+  - Correção no diagrama intermediário de entidade-relacionamento
+  - Correção no diagrama relacional de entidade-relacionamento
+
+## 23/07/2023
+- *Atualização de 2 CDUS no projeto*:
+  - Implementação de banco de dados para o CDU Cadastro de usuário
+  - Implementação de banco de dados para o CDU Cadastro de livro
