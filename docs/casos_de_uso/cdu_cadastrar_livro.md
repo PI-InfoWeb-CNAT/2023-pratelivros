@@ -110,10 +110,10 @@ Após a execução deste caso de uso, espera que o sistema:
 
 ### 6. Protótipos de Interface
 #### 6.1. Página de cadastro de um livro
-![cadastro de livro](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/93940387/3c725794-11be-41c9-838a-6481d6221992)
+![cadastro de livro](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/93940387/5b74f09c-5e01-4ef9-a04f-0f87ba5efff7)
 
 #### 6.2. Página de visualização dos detalhes de um livro
-![detalhes do livro](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/84422577/9b85d29a-28b6-4527-a857-a5514be31a39)
+![detalhes do livro](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/93940387/809edd30-c6cd-41d1-86e3-2c91bb6d5611)
 
 ### 7. Diagrama de classe de domínio usados neste caso de uso
 `A ser desenvolvido pelo aluno.`
