@@ -36,19 +36,19 @@
                 @Html.EditorFor(model => model.senha, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "Senha", @type = "password" } })
                 <div class="flex justify-between w-4/5 mt-2">
                     @Html.EditorFor(model => model.celular, new { htmlAttributes = new { @class = "m-0 border-none cadastroInput", @placeholder = "Celular (opcional)", @type = "tel" } })
-                    @Html.EditorFor(model => model.idade, new { htmlAttributes = new { @class = "m-0 cadastroInput border-none", @placeholder = "Idade", @type = "text", @onfocus = "this.type='date'", @onblur = "this.type='text'" } })
+                    @Html.EditorFor(model => model.idade, new { htmlAttributes = new { @class = "m-0 cadastroInput border-none", @placeholder = "Data de nascimento", @type = "text", @onfocus = "this.type='date'", @onblur = "this.type='text'" } })
                 </div>
                 <div class="flex items-center mt-6">
                     <label class="radio mx-2 font-bold flex justify-center items-center">
-                        @Html.EditorFor(model => model.genero, new { htmlAttributes = new { @type = "radio" } })
+                        @Html.RadioButtonFor(model => model.genero, "M")
                         <span>Masculino</span>
                     </label>
                     <label class="radio mx-2 font-bold flex justify-center items-center">
-                        @Html.EditorFor(model => model.genero, new { htmlAttributes = new { @type = "radio" } })
+                        @Html.RadioButtonFor(model => model.genero, "F")
                         <span>Feminino</span>
                     </label>
                     <label class="radio mx-2 font-bold flex justify-center items-center">
-                        @Html.EditorFor(model => model.genero, new { htmlAttributes = new { @type = "radio" } })
+                        @Html.RadioButtonFor(model => model.genero, "O")
                         <span>Outro</span>
                     </label>
                 </div>

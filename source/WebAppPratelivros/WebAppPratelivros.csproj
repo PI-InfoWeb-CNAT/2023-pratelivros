@@ -113,11 +113,13 @@
     <Compile Include="Context\EFContext.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LeitorController.cs" />
+    <Compile Include="Controllers\LivroController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Home.cs" />
     <Compile Include="Models\Leitor.cs" />
+    <Compile Include="Models\Livro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +132,7 @@
     <Content Include="Views\Leitor\Login.cshtml" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.0.min.map" />
+    <Content Include="Views\Livro\Cadastro.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

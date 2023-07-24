@@ -26,6 +26,7 @@ namespace WebAppPratelivros.Controllers
         public ActionResult Cadastro(Leitor leitor)
         {
             context.Leitor.Add(leitor);
+            leitor.avaliacao = 5;
             context.SaveChanges();
             return RedirectToAction("Index");
         }
