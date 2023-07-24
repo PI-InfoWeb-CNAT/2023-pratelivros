@@ -30,25 +30,25 @@
             @using (Html.BeginForm("Cadastro", "Leitor", FormMethod.Post, new { @class = "flex flex-col items-center" }))
             {
                 @Html.AntiForgeryToken()
-                @Html.EditorFor(model => model.nome, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "Nome", @type = "text" } })
-                @Html.EditorFor(model => model.username, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "Username", @type = "text" } })
-                @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "E-mail", @type = "text" } })
-                @Html.EditorFor(model => model.senha, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "Senha", @type = "password" } })
+                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "Nome", @type = "text" } })
+                @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "Username", @type = "text" } })
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "E-mail", @type = "text" } })
+                @Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "Senha", @type = "password" } })
                 <div class="flex justify-between w-4/5 mt-2">
-                    @Html.EditorFor(model => model.celular, new { htmlAttributes = new { @class = "m-0 border-none cadastroInput", @placeholder = "Celular (opcional)", @type = "tel" } })
-                    @Html.EditorFor(model => model.idade, new { htmlAttributes = new { @class = "m-0 cadastroInput border-none", @placeholder = "Data de nascimento", @type = "text", @onfocus = "this.type='date'", @onblur = "this.type='text'" } })
+                    @Html.EditorFor(model => model.Celular, new { htmlAttributes = new { @class = "m-0 border-none cadastroInput", @placeholder = "Celular (opcional)", @type = "tel" } })
+                    @Html.EditorFor(model => model.Idade, new { htmlAttributes = new { @class = "m-0 cadastroInput border-none", @placeholder = "Data de nascimento", @type = "text", @onfocus = "this.type='date'", @onblur = "this.type='text'" } })
                 </div>
                 <div class="flex items-center mt-6">
                     <label class="radio mx-2 font-bold flex justify-center items-center">
-                        @Html.RadioButtonFor(model => model.genero, "M")
+                        @Html.RadioButtonFor(model => model.Genero, "M")
                         <span>Masculino</span>
                     </label>
                     <label class="radio mx-2 font-bold flex justify-center items-center">
-                        @Html.RadioButtonFor(model => model.genero, "F")
+                        @Html.RadioButtonFor(model => model.Genero, "F")
                         <span>Feminino</span>
                     </label>
                     <label class="radio mx-2 font-bold flex justify-center items-center">
-                        @Html.RadioButtonFor(model => model.genero, "O")
+                        @Html.RadioButtonFor(model => model.Genero, "O")
                         <span>Outro</span>
                     </label>
                 </div>

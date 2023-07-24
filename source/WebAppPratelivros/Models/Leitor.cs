@@ -9,15 +9,20 @@ namespace WebAppPratelivros.Models
 {
     public class Leitor
     {
-        public string nome { get; set; }
-        public string username { get; set; }
+        [Required]
+        public string Nome { get; set; }
+        [Required]
+        public string Username { get; set; }
         [Key]
-        public string email { get; set; }
-        public string senha { get; set; }
-        public string celular { get; set; }
-        public string idade { get; set; }
-        public string genero { get; set; }
-        [DefaultValue(5)]
-        public float avaliacao { get; set; }
+        public string Email { get; set; }
+        [Required]
+        public string Senha { get; set; }
+        public string Celular { get; set; }
+        [Required]
+        public string Idade { get; set; }
+        [Required]
+        public string Genero { get; set; }
+        [Required]
+        public float Avaliacao { get; set; }
     }
 }
