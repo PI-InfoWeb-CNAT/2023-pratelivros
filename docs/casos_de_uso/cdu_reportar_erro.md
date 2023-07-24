@@ -76,10 +76,10 @@ Após a execução deste caso de uso, espera que o sistema:
 
 ### 6. Protótipos de Interface
 #### 6.1. Página de visitante
-![pagina de visitante](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/84422577/7a3af42e-cf42-4c9e-9998-f9a31350e89d)
+![pagina de visitante](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/93940387/c60980e2-b796-475d-a053-185890833a7b)
 
 #### 6.2. Página de leitor
-![pagina inicial](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/84422577/6dfc2e44-4ed9-417f-b8ae-663dc599fd43)
+![pagina de leitor](https://github.com/PI-InfoWeb-CNAT/2023-pratelivros/assets/93940387/a4c9096c-01d0-41e2-ae25-8c42e0ace6f2)
 
 ### 7. Diagrama de classe de domínio usados neste caso de uso
 `A ser desenvolvido pelo aluno.`
