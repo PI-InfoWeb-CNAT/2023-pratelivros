@@ -30,6 +30,7 @@
             @using (Html.BeginForm("Cadastro", "Leitor", FormMethod.Post, new { @class = "flex flex-col items-center" }))
             {
                 @Html.AntiForgeryToken()
+                @Html.ValidationSummary()
                 @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "Nome", @type = "text" } })
                 @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "Username", @type = "text" } })
                 @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "E-mail", @type = "text" } })
