@@ -66,6 +66,12 @@ Após a execução deste caso de uso, espera que o sistema:
 |3. O leitor não insere a Descrição do livro e clica em "Cadastrar livro" | --- |
 |--- |4. O sistema não valida os dados inseridos pelo leitor e exibe uma mensagem de erro ("O campo 'Descrição' é obrigatório") |
 
+##### 5.2.5 Descrição muito curta
+|  Ator  | Sistema |
+|:-------|:------- |
+|3. O leitor insere uma Descrição muito curta e clica em "Cadastrar livro" | --- |
+|--- |4. O sistema não valida os dados inseridos pelo leitor e exibe uma mensagem de erro ("O campo 'Descrição' deve ser composto por, no mínimo, trinta caracteres") |
+
 ##### 5.2.6 Gênero em branco
 |  Ator  | Sistema |
 |:-------|:------- |
