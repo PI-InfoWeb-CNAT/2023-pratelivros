@@ -17,7 +17,7 @@ Este caso de uso permite que um leitor visualize os detalhes de um livro cadastr
 
 ### 3. Pré-condições
 São pré-condições para iniciar este caso de uso:
-- O leitor estar logado no sistema
+- Não possui
 
 ### 4. Pós-condições
 Após a execução deste caso de uso, espera que o sistema:
