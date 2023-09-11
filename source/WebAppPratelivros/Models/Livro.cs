@@ -9,29 +9,32 @@ namespace WebAppPratelivros.Models
 {
     public class Livro
     {
-        [Key]
-        [StringLength(13, ErrorMessage = "ISBN deve ter 13 caracteres")]
-        public string ISBN { get; set; }
-        [Required]
-        public string Editora { get; set; }
-        [Required]
-        public int Edicao { get; set; }
-        [Required]
-        public string Idioma { get; set; }
-        [Required]
-        public int NPaginas { get; set; }
-        [Required]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Título' é obrigatório.")]
         public string Titulo { get; set; }
-        [Required]
+        [Key]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'IBSN' é obrigatório.")]
+        [MaxLength(13, ErrorMessage = "O campo 'ISBN' deve ter 13 caracteres")]
+        [MinLength(13, ErrorMessage = "O campo 'ISBN' deve ter 13 caracteres")]
+        public string ISBN { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Editora' é obrigatório.")]
+        public string Editora { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Edição' é obrigatório.")]
+        public int Edicao { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Idioma' é obrigatório.")]
+        public string Idioma { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'N° de Páginas' é obrigatório.")]
+        public int NPaginas { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Autor' é obrigatório.")]
         public string Autor { get; set; }
-        [Required]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Gênero' é obrigatório.")]
         public string Genero { get; set; }
-        [Required]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Data de Publicação' é obrigatório.")]
         public string DataPub { get; set; }
-        [Required]
-        [StringLength(1000, MinimumLength = 30, ErrorMessage = "Deve estar entre 30 e 1000 caracteres")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Descrição' é obrigatório.")]
+        [MinLength(30, ErrorMessage = "O campo 'Descrição' deve ser composto por, no mínimo, 30 caracteres")]
         public string Descricao { get; set; }
         public System.Guid Id { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Capa' é obrigatório.")]
         public byte[] Pic { get; set; }
     }
 }

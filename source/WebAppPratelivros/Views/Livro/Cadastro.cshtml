@@ -11,6 +11,7 @@
         @using (Html.BeginForm("Cadastro", "Livro", FormMethod.Post, new { @class = "flex text-center items-center", enctype = "multipart/form-data" }))
         {
             @Html.AntiForgeryToken()
+            @Html.ValidationSummary()
             <label for="capa" class="border-color2 border-4 w-48 h-72 mt-2 mb-12 py-32 font-bold hover:cursor-pointer">
                 +
                 Adicionar
