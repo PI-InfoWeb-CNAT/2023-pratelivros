@@ -28,9 +28,9 @@ Após a execução deste caso de uso, espera que o sistema:
 #### 5.1. Fluxo Principal 
 |  Ator  | Sistema |
 |:-------|:------- |
-|1. O usuário pesquisa por determinado livro na plataforma | --- |
-| --- |2. O sistema redireciona o usuário para o resultado de sua pesquisa | --- |
-|3. O usuário clica para acessar os detalhes de um livro | --- |
+|1. O leitor pesquisa por determinado livro na plataforma | --- |
+| --- |2. O sistema redireciona o leitor para o resultado de sua pesquisa | --- |
+|3. O leitor clica para acessar os detalhes de um livro | --- |
 |--- |4. O sistema redireciona o usuário para a página de detalhes daquele livro, contendo as informações título, capa, data de publicação, autor, idioma, editora, gênero, edição, n° de páginas, ISBN, descrição e os usuários que possuem, sendo possível acessar as informações dos exemplares desses usuários |
 
 #### 5.2. Fluxos alternativos
@@ -46,7 +46,7 @@ Após a execução deste caso de uso, espera que o sistema:
 ##### 5.2.2 Acessar detalhes pela página inicial
 |  Ator  | Sistema |
 |:-------|:------- |
-|1. O leitor ou o moderador acessa a página inicial do sistema, com as seções "Recomendados para você" e "Últimas adições" e clica para acessar os detalhes de um dos livros destas seções | --- |
+|1. O leitor (ou o moderador) acessa a página inicial do sistema, com as seções "Recomendados para você" e "Últimas adições" e clica para acessar os detalhes de um dos livros destas seções | --- |
 |--- |2. O sistema redireciona o usuário para a página de detalhes daquele livro, contendo as informações título, capa, data de publicação, autor, idioma, editora, gênero, edição, n° de páginas, ISBN, descrição e os usuários que possuem, sendo possível acessar as informações dos exemplares desses usuários |
 
 ### 6. Protótipos de Interface
