@@ -1,6 +1,6 @@
 # Projeto pratelivros
 
-## Especificação do caso de uso - Cadastrar livro
+## Especificação do caso de uso - Visualizar livro
 
 ### Histórico da Revisão 
 |  Data  | Versão | Descrição | Autor |
