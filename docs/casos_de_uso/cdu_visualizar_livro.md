@@ -8,12 +8,12 @@
 | 11/09/2023 | **1.00** | Primeira versão  | Gabriel FERREIRA |
 
 ### 1. Resumo 
-Este caso de uso permite que um leitor visualize os detalhes de um livro cadastrado no sistema.
+Este caso de uso permite que um usuário visualize os detalhes de um livro cadastrado no sistema.
 
-### 2. Atores 
+### 2. Atores
+- Visitante
 - Leitor
 - Moderador
-- Visitante
 
 ### 3. Pré-condições
 São pré-condições para iniciar este caso de uso:
