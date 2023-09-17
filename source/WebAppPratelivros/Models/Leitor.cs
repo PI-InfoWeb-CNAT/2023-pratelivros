@@ -28,5 +28,11 @@ namespace WebAppPratelivros.Models
         [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Gênero' é obrigatório.")]
         public string Genero { get; set; }
         public float Avaliacao { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Tipo' é obrigatório.")]
+        public Denuncia Tipo { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Mensagem' é obrigatório.")]
+        public string Mensagem { get; set; }
     }
 }
+ 
+        

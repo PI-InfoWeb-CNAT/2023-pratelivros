@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "HOME";
+    var msg = TempData["Mensagem"] as string;
 }
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -176,19 +177,24 @@
             </div>
         </section>
         <section>
+            @if (!string.IsNullOrEmpty(msg))
+            {
+                <div class="alert alert-sucess">
+                    <p>@msg</p>
+                </div>
+            }
             <h2>Envie sua mensagem</h2>
-            <form>
-                <input type="text" placeholder="Nome" />
-                <input type="text" placeholder="Email" />
-                <select class="m-2 p-2" name="tipo" dir="ltr">
-                    <option value="diretrizes">Usuário violando as diretrizes gerais</option>
-                    <option value="contImproprio" selected>Conteúdo impróprio</option>
-                    <option value="erroSistema">Erro no sistema</option>
-                    <option value="outro">Outro</option>
-                </select>
-                <textarea placeholder="Escreva sua mensagem..."></textarea>
-                <input class="hover:cursor-pointer" type="submit" />
-            </form>
+            @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "flex text-center items-center", enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary()
+
+                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @placeholder = "Nome", @type = "text" } })
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @placeholder = "Email", @type = "text" } })
+                @Html.DropDownListFor(model => model.Tipo, new SelectList(Enum.GetValues(typeof(WebAppPratelivros.Models.Denuncia))), "Tipo da mensagem")
+                @Html.TextAreaFor(model => model.Mensagem, new { htmlAttributes = new { @placeholder = "Mensagem" } })
+                <input class="hover:cursor-pointer" type="submit" value="Enviar" />
+            }
         </section>
     </main>
     <footer>
