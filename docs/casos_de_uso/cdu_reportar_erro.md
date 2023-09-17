@@ -8,7 +8,7 @@
 | 26/06/2023 | **1.00** | Primeira versão  | Gabriel FERREIRA |
 
 ### 1. Resumo 
-Este caso de uso permite que um usuário reporte um erro no sistema
+Este caso de uso permite que um usuário reporte um erro no sistema.
 
 ### 2. Atores 
 - Visitante
@@ -62,13 +62,19 @@ Após a execução deste caso de uso, espera que o sistema:
 |3. O usuário insere um E-mail inválido | --- |
 |--- |4. O sistema não valida os dados inseridos pelo usuário e exibe uma mensagem de erro ("Este não é um endereço de E-mail válido") |
 
-##### 5.2.6 Descrição em branco
+##### 5.2.6 Tipo de problema em branco
+|  Ator  | Sistema |
+|:-------|:------- |
+|3. O usuário não insere o Tipo de problema e clica em "Enviar" | --- |
+|--- |4. O sistema não valida os dados inseridos pelo usuário e exibe uma mensagem de erro ("O campo 'Tipo de problema' é obrigatório") |
+
+##### 5.2.7 Descrição em branco
 |  Ator  | Sistema |
 |:-------|:------- |
 |3. O usuário não insere a Descrição do problema e clica em "Enviar" | --- |
 |--- |4. O sistema não valida os dados inseridos pelo usuário e exibe uma mensagem de erro ("O campo 'Descrição' é obrigatório") |
 
-##### 5.2.7 Descrição muito grande
+##### 5.2.8 Descrição muito grande
 |  Ator  | Sistema |
 |:-------|:------- |
 |3. O usuário insere uma descrição de problema muito grande no campo 'Descrição' e clica em "Enviar" | --- |
