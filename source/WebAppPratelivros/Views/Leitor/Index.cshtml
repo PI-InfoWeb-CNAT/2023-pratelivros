@@ -152,7 +152,7 @@
     <section>
         @if (!string.IsNullOrEmpty(msg))
         {
-            <div class="alert alert-sucess">
+            <div class="email enviado">
                 <p>@msg</p>
             </div>
         }
@@ -164,8 +164,8 @@
 
             @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @placeholder = "Nome", @type = "text" } })
             @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @placeholder = "Email", @type = "text" } })
-            @Html.DropDownListFor(model => model.Tipo, new SelectList(Enum.GetValues(typeof(WebAppPratelivros.Models.Denuncia))), "Tipo da mensagem")
-            @Html.TextAreaFor(model => model.Mensagem, new { htmlAttributes = new { @placeholder = "Mensagem" } })
+            @Html.DropDownListFor(model => model.Tipo, new SelectList(Enum.GetValues(typeof(WebAppPratelivros.Models.Denuncia))), "Tipo da mensagem", new { @class = "p-2 m-2" })
+            @Html.TextAreaFor(model => model.Mensagem, new { @placeholder = "Mensagem", @class = "p-2 m-2" })
             <input class="hover:cursor-pointer" type="submit" value="Enviar" />
         }
     </section>

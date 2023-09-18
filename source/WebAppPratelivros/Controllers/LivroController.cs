@@ -39,6 +39,11 @@ namespace WebAppPratelivros.Controllers
             }
             return View(livro);
         }
+        //Details
+        public ActionResult Detalhes()
+        {
+            return View();
+        }
 
     }
 }

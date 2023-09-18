@@ -20,7 +20,7 @@
             <input type="file" id="capa" name="capa" accept="image/png, image/jpeg" class="hidden" onchange="fileCheck(this);" />
             @Html.EditorFor(model => model.Titulo, new { htmlAttributes = new { @placeholder = "Título", @type = "text" } })
             @Html.EditorFor(model => model.Autor, new { htmlAttributes = new { @placeholder = "Autor", @type = "text" } })
-            @Html.TextAreaFor(model => model.Descricao, new { htmlAttributes = new { @placeholder = "Descrição" } })
+            @Html.TextAreaFor(model => model.Descricao, new { @placeholder = "Descrição", @class = "p-2 m-2" })
             @Html.EditorFor(model => model.Genero, new { htmlAttributes = new { @placeholder = "Gênero", @type = "text", @list = "generos" } })
             <datalist id="generos">
                 <option>Antologia</option>

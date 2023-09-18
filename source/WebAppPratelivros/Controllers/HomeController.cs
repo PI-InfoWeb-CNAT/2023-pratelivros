@@ -51,8 +51,8 @@ namespace WebAppPratelivros.Controllers
 
                 client.Disconnect(true);
             }
-            TempData["Mensagem"] = "Valeu";
-            return RedirectToAction("Index");
+            TempData["Mensagem"] = "Obrigado por nos contatar! A sua denúncia será analisada em breve.";
+            return RedirectToAction("");
         }
     }
 }
