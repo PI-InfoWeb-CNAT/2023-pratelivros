@@ -72,6 +72,33 @@ namespace WebAppPratelivros.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult Login(string email, string senha)
+        {
+            // Verifica se os campos de email e senha foram preenchidos
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha))
+            {
+                // Adicione uma mensagem de erro à ViewData
+                ViewData["ErrorMessage"] = "Preencha todos os campos.";
+
+                // Retorna para a View de login, exibindo a mensagem de erro
+                return View("Login");
+            }
+
+            var data = context.Leitor.Where(s => s.Email.Equals(email) && s.Senha.Equals(senha)).ToList();
+            if (data.Count() > 0)
+            {
+                return RedirectToAction("Index", "Leitor");
+            }
+            else
+            {
+                // Caso os dados de login estejam incorretos, adicione uma mensagem de erro à ViewData
+                ViewData["ErrorMessage"] = "Email ou senha incorretos.";
+
+                // Retorna para a View de login, exibindo a mensagem de erro
+                return View("Login");
+            }
+        }
         public ActionResult Verify()
         {
             return View();

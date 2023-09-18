@@ -1,6 +1,7 @@
 ﻿@model WebAppPratelivros.Models.Leitor
 
 @{
+    ViewBag.Title = "Login";
     Layout = null;
 }
 
@@ -26,12 +27,27 @@
             </h1>
         </header>
         <main class="flex flex-col items-left m-4">
-            <form action="@Url.Action("Index", "Leitor")" class="flex flex-col items-center">
+            @using (Html.BeginForm("Login", "Leitor", FormMethod.Post, new { @class = "flex flex-col items-center" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary()
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "w-4/5 my-4 border-none", @placeholder = "E-mail", @type = "text" } })
+                @Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "w-4/5 my-4 border-none", @placeholder = "Senha", @type = "password" } })
+                <a class="mr-80 ml-3 hover:underline font-bold" href="#">Esqueceu sua senha?</a>
+                <input class="hover:cursor-pointer" type="submit" />
+            }
+            @section ScriptPage {
+                <script src="~/Scripts/jquery.validate.min.js">
+                </script>
+                <script src="~/Scripts/jquery.validate.unobtrusive.min.js">
+                </script>
+            }
+            @*<form action="@Url.Action("Index", "Leitor")" class="flex flex-col items-center">
                 <input type="email" placeholder="E-mail" class="w-4/5 my-4 border-none" />
                 <input type="password" placeholder="Senha" class="w-4/5 my-4 border-none" />
                 <a class="mr-80 ml-3 hover:underline font-bold" href="#">Esqueceu sua senha?</a>
                 <input class="hover:cursor-pointer" type="submit" />
-            </form>
+            </form>*@
         </main>
         <footer>
             <small class="font-bold">© pratelivros</small>
