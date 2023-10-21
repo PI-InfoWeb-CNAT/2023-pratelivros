@@ -32,6 +32,7 @@ namespace WebAppPratelivros.Models
         public Denuncia Tipo { get; set; }
         //[Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Mensagem' é obrigatório.")]
         public string Mensagem { get; set; }
+        public IQueryable<Livro> livro;
     }
 }
  

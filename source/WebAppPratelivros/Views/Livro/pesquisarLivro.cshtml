@@ -1,0 +1,55 @@
+﻿@model IEnumerable<WebAppPratelivros.Models.Livro>
+
+@{
+    ViewBag.Title = "pesquisarLivro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<main class="pattern">
+    <section>
+        <h3>
+            Resultados para "@ViewBag.resultadoPesquisa"
+        </h3>
+        <div class="flex flex-wrap w-10/12 justify-between mt-8">
+            @foreach (var item in Model)
+            {
+                <!-- Resultado 1 -->
+                <div class="flex mt-16">
+                    <div class="flex flex-col">
+                        <figure>
+                            @if (item.Pic != null)
+                            {
+                                var base64 = Convert.ToBase64String(item.Pic);
+                                var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+
+                                <img src="@imgSrc" width="180" height="220" />
+                            }
+                        </figure>
+                        <h4 class="w-[220px]">@item.Titulo</h4>
+                        <p class="w-[220px]"><b>Escrito por: </b>@item.Autor</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <h4 class="ml-4">Usuários que possuem:</h4>
+                        <div>
+                            <div class="card">
+                                <div class="flex items-center">
+                                    <img href="" src="Content/imagens/icons/user 2.png" width="50" class="user pr-3" />
+                                    <p><b>Akira Vitor Yamazaki</b></p>
+                                </div>
+                                <a class="rounded-full bg-[#FF7222] border-2 border-white border-solid w-4 h-4 " href="javascript:abrir()"></a>
+                            </div>
+
+                            <div class="card">
+                                <div class="flex items-center">
+                                    <img href="" src="Content/imagens/icons/user 2.png" width="50" class="user pr-3" />
+                                    <p><b>Goleiro Cássio Einstein Pereira</b></p>
+                                </div>
+                                <a class="rounded-full bg-[#FFD12F] border-2 border-white border-solid w-4 h-4" href="javascript:abrir()"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+</main>

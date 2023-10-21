@@ -18,7 +18,9 @@ namespace WebAppPratelivros.Controllers
         // GET: Leitor
         public ActionResult Index()
         {
-            return View();
+            Leitor h = new Leitor();
+            h.livro = context.Livros.OrderBy(c => c.Titulo);
+            return View(h);
         }
 
         [HttpPost]

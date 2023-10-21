@@ -80,34 +80,6 @@ header div button ol {
   border-radius: 0.3em;
 }
 
-.right-10 {
-  top: 5.8em;
-  visibility: hidden;
-}
-
-.right-32 {
-  visibility: hidden;
-}
-
-.right-48 {
-  visibility: hidden;
-  top: 5.8em;
-}
-
-.notif {
-  background-color: #FFFF;
-  padding: 1em;
-  border-radius: 0.3em;
-}
-
-.notif a {
-  display: flex;
-}
-
-.notif a figure {
-  margin-right: 1em;
-}
-
 main section {
   display: flex;
   flex-direction: column;
@@ -117,11 +89,7 @@ main section {
 }
 
 main section.banner {
-  background-image: url(imagens/book_bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  height: 85vh;
+  background-image: url(/Content/imagens/book_bg.png);
 }
 
 main section h2 {
@@ -175,27 +143,6 @@ main section p {
   text-shadow: none;
 }
 
-section.tutorial p {
-  width: 30em;
-}
-
-section.tutorial h3 {
-  color: #F2AF5C;
-}
-
-section.tutorial div {
-  display: flex;
-  padding: 1em;
-}
-
-section.tutorial div div {
-  flex-direction: column;
-}
-
-section.faq {
-  background-color: #F2CDAC;
-}
-
 section form {
   display: flex;
   flex-direction: column;
@@ -210,16 +157,6 @@ select {
   border: 2px solid #D7D7D7;
   margin: 0.5em;
   border-radius: 0.5em;
-}
-
-section h4 {
-  font-weight: bold;
-  font-size: 2em;
-}
-
-/* Gambiarra pra consertar width do input em cadastrar-livro */
-.trezerem {
-  width: 13.5rem;
 }
 
 form textarea {
@@ -245,41 +182,84 @@ form input[type=submit] {
   color: white;
 }
 
-/* LOGIN */
-.login-box {
+section h4 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em 1em;
+  background-color: #F2CDAC;
+  width: 26rem;
+  border-radius: 0.5em;
+  margin: 1em;
+}
+
+/* MODAL */
+
+div#esmaecer {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 2;
+  visibility: hidden;
+}
+
+div#modal {
+  background-color: #F8E6D5;
+  border: 0.3em solid #401B1B;
+  box-shadow: 0 0 0.3 black;
+  width: 65em;
+  height: fit-content;
+  padding: 3em;
+  position: fixed;
+  z-index: 3;
+  left: 23%;
+  top: 20%;
+  visibility: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 38rem;
-  height: 40rem;
 }
 
-/* CADASTRO */
-.cadastro-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 38rem;
-  height: 50rem;
+/* TOOLTIP */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
-.cadastroInput {
-  width: 48%;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 16em;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
 }
 
-/* CADASTRO */
-.cadastro-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 38rem;
-  height: 50rem;
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
 }
 
-.cadastroInput {
-  width: 48%;
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
+/* CADASTRO INPUT RADIO CUSTOM*/
 .radio {
   display: block;
   cursor: pointer;
@@ -331,6 +311,66 @@ form input[type=submit] {
   transform: scale(1, 1);
 }
 
-#menu3{
-  width: 25rem;
+/* Accordion */
+.button {
+  border-radius: 0.5rem;
+  background: #F9F9F9;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  width: 500px;
+box-sizing: border-box;
+}
+.content, .content2, .content3, .content4, .content5, .content6, .content7, .content8 {
+border-radius: 0 0 0.5rem 0.5rem;
+margin-top: -5px;
+background: #F9F9F9;
+width: 500px;
+overflow: hidden;
+max-height: 0;
+transition: all 0.3s ease-in-out;
+overflow: hidden;
+box-sizing: border-box;
+}
+#state:checked ~ .content {  
+max-height: 150px;
+border-top: 1px solid #401B1B;
+}
+#state2:checked ~ .content2 {  
+max-height: 150px;
+border-top: 1px solid #401B1B;
+}
+#state3:checked ~ .content3 {  
+max-height: 150px;
+border-top: 1px solid #401B1B;
+}
+#state4:checked ~ .content4 {  
+max-height: 150px;
+border-top: 1px solid #401B1B;
+}
+#state5:checked ~ .content5 {  
+max-height: 150px;
+border-top: 1px solid #401B1B;
+}
+#state6:checked ~ .content6 {  
+max-height: 150px;
+border-top: 1px solid #401B1B;
+}
+#state7:checked ~ .content7 {  
+max-height: 150px;
+border-top: 1px solid #401B1B;
+}
+#state8:checked ~ .content8 {  
+max-height: 150px;
+border-top: 1px solid #401B1B;
+}
+.inner {
+margin: 16px;
+}
+
+/* preview cadastrar livro */
+#file-ip-1-preview{
+  position: relative;
+  width: 12rem;
+  height: 18rem;
+  top: -22rem;
 }

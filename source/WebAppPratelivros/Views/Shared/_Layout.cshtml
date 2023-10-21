@@ -18,9 +18,10 @@
             <h1>
                 <a href="@Url.Action("Index", "Leitor")"><img src="~/Content/imagens/logo.png" width="150" /></a>
             </h1>
-            <form>
-                <input type="text" placeholder="Pesquise um livro..." id="pesquisa">
-            </form>
+            @using (Html.BeginForm("pesquisarLivro", "Livro", FormMethod.Get))
+            {
+                @Html.TextBox("SearchString") <input type="submit" value="Filter" />
+            }
         </div>
         <div>
             <button onclick="abrir_notif()">

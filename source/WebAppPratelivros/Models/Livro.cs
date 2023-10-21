@@ -40,7 +40,7 @@ namespace WebAppPratelivros.Models
         [MaxLength(1000, ErrorMessage = "O campo 'Descrição' deve ser composto por, no máximo, 1000 caracteres")]
         public string Descricao { get; set; }
         public System.Guid Id { get; set; }
-        [Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Capa' é obrigatório.")]
+        //[Required(AllowEmptyStrings = false, ErrorMessage = "O campo 'Capa' é obrigatório.")]
         public byte[] Pic { get; set; }
     }
 }

@@ -167,6 +167,7 @@
     <Content Include="Scripts\jquery-3.7.0.min.map" />
     <Content Include="Views\Livro\Cadastro.cshtml" />
     <Content Include="Views\Livro\Detalhes.cshtml" />
+    <Content Include="Views\Livro\pesquisarLivro.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

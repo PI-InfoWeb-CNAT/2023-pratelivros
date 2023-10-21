@@ -39,6 +39,23 @@ namespace WebAppPratelivros.Controllers
             }
             return View(livro);
         }
+        public ActionResult pesquisarLivro(string searchString)
+        {
+            ViewBag.resultadoPesquisa = searchString;
+            var livros = from m in context.Livros select m;
+            
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                livros = livros.Where(s => s.Titulo.Contains(searchString));
+            }
+            //if (searchString == "")
+            //{
+                
+            //}
+            return View(livros);
+            
+
+        }
         //Details
         public ActionResult Detalhes()
         {
