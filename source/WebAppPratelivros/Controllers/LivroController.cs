@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using WebAppPratelivros.Models;
+using static Org.BouncyCastle.Crypto.Engines.SM2Engine;
 
 namespace WebAppPratelivros.Controllers
 {
@@ -32,6 +35,7 @@ namespace WebAppPratelivros.Controllers
                     capa.InputStream.Read(imgByte, 0, capa.ContentLength);
                     livro.Id = Guid.NewGuid();
                     livro.Pic = imgByte;
+                    livro.numerolegal = context.Livros.Select(m => m.numerolegal).Max() + 1;
                     context.Livros.Add(livro);
                     context.SaveChanges();
                 }
@@ -43,7 +47,6 @@ namespace WebAppPratelivros.Controllers
         {
             ViewBag.resultadoPesquisa = searchString;
             var livros = from m in context.Livros select m;
-            
             if (!String.IsNullOrEmpty(searchString))
             {
                 livros = livros.Where(s => s.Titulo.Contains(searchString));
@@ -53,14 +56,19 @@ namespace WebAppPratelivros.Controllers
                 
             //}
             return View(livros);
-            
-
         }
-        //Details
-        public ActionResult Detalhes()
+        public ActionResult Detalhes(int? numerolegal)
         {
-            return View();
+            if(numerolegal == null)
+{
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Livro livro = context.Livros.Find(numerolegal);
+            if (livro == null)
+            {
+                return HttpNotFound();
+            }
+            return View(livro);
         }
-
     }
 }
