@@ -89,7 +89,7 @@ main section {
 }
 
 main section.banner {
-  background-image: url(Content/imagens/book_bg.png);
+  background-image: url('imagens/book_bg.png');
 }
 
 main section h2 {
@@ -376,14 +376,14 @@ margin: 16px;
 }
 
 .pattern{
-  background-image: url('Content/imagens/pattern.png');
+  background-image: url('imagens/pattern.png');
   background-repeat: repeat;
 }
 .pattern-marrom{
-  background-image: url('Content/imagens/pattern-marrom.svg');
+  background-image: url('imagens/pattern-marrom.svg');
   background-repeat: repeat;
 }
 .bg-form{
-  background-image: url('Content/imagens/bg-form.png');
+  background-image: url('imagens/bg-form.png');
   background-size: cover;
 }

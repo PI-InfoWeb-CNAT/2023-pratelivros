@@ -19,50 +19,64 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="flex justify-center items-center h-screen">
-    <div class="login-box bg-color1">
+<body class="flex justify-center items-center h-screen pattern-marrom">
+    <div class="bg-form w-[50rem] h-[40rem] px-16 flex items-center">
+        <div>
+            <h2 class="text-white font-semibold text-4xl mt-2">Pratelivros</h2>
+            <h2 class="text-white font-semibold text-4xl mt-2">Pra Ter Livros</h2>
+            <h4 class="text-white font-semibold text-xl mt-4">O pratelivros™ te oferece tudo que precisa para encontrar ótimas opções de livros e economizar mais.</h4>
+            <ul class="flex">
+                <li class="mr-2 my-6">
+                    <a href=""><img src="~/Content/imagens/icons/instagram-white-icon.svg" /></a>
+                </li>
+                <li class="mx-4 my-6">
+                    <a href=""><img src="~/Content/imagens/icons/twitter-white-icon.svg" /></a>
+                </li>
+                <li class="mx-2 my-6">
+                    <a href=""><img src="~/Content/imagens/icons/whatsapp-white-icon.svg" /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex flex-col justify-around w-[38rem] h-[40rem] bg-color1">
         <header class="flex justify-center m-4">
             <h1 class="flex justify-center">
                 <a href="@Url.Action("Index", "Home")"><img src="~/Content/imagens/logo.png" width="150" /></a>
             </h1>
         </header>
-        <main class="flex flex-col items-left m-4">
-            @using (Html.BeginForm("Login", "Leitor", FormMethod.Post, new { @class = "flex flex-col items-center" }))
-            {
-                @Html.AntiForgeryToken()
-                @Html.ValidationSummary()
-                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "w-4/5 my-4 border-none", @placeholder = "E-mail", @type = "text" } })
-                @Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "w-4/5 my-4 border-none", @placeholder = "Senha", @type = "password" } })
-                <a class="mr-80 ml-3 hover:underline font-bold" href="#">Esqueceu sua senha?</a>
-                <input class="hover:cursor-pointer" type="submit" />
-            }
-            @section ScriptPage {
-                <script src="~/Scripts/jquery.validate.min.js">
-                </script>
-                <script src="~/Scripts/jquery.validate.unobtrusive.min.js">
-                </script>
-            }
-            @*<form action="@Url.Action("Index", "Leitor")" class="flex flex-col items-center">
-                <input type="email" placeholder="E-mail" class="w-4/5 my-4 border-none" />
-                <input type="password" placeholder="Senha" class="w-4/5 my-4 border-none" />
-                <a class="mr-80 ml-3 hover:underline font-bold" href="#">Esqueceu sua senha?</a>
-                <input class="hover:cursor-pointer" type="submit" />
-            </form>*@
+        <main>
+            <div class="flex flex-col items-center">
+                <img class="self-center" src='~/Content/imagens/icons/usuario-icon.png' />
+                <p class="font-semibold mt-2">
+                    Bem vindo novamente ao pratelivros™
+                </p>
+            </div>
+            <div class="flex flex-col items-left m-4">
+                @using (Html.BeginForm("Login", "Leitor", FormMethod.Post, new { @class = "flex flex-col items-center" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary()
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "w-4/5 my-4 border-none", @placeholder = "E-mail", @type = "text" } })
+                    @Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "w-4/5 my-4 border-none", @placeholder = "Senha", @type = "password" } })
+                    <a class="mr-80 ml-3 hover:underline font-bold" href="#">Esqueceu sua senha?</a>
+                    <input class="hover:cursor-pointer" type="submit" />
+                }
+                @section ScriptPage {
+                    <script src="~/Scripts/jquery.validate.min.js">
+                    </script>
+                    <script src="~/Scripts/jquery.validate.unobtrusive.min.js">
+                    </script>
+                }
+                <div class="flex flex-col items-center">
+                    <p class="relative mb-[-0.7rem] bg-color1 px-2 font-semibold">ou</p>
+                    <hr class="border-color2 border w-[10rem]" />
+                    <p class="my-6">Não tem uma conta? <a class="hover:underline" href="@Url.Action("Cadastro", "Leitor")"><b>Cadastre-se</b></a></p>
+                </div>
+
+
+            </div>
+
         </main>
-        <footer>
-            <small class="font-bold">© pratelivros</small>
-            <ul>
-                <li>
-                    <a href=""><img src="~/Content/imagens/icons/instagram.png" /></a>
-                </li>
-                <li>
-                    <a href=""><img src="~/Content/imagens/icons/twitter.png" /></a>
-                </li>
-                <li>
-                    <a href=""><img src="~/Content/imagens/icons/whatsapp.png" /></a>
-                </li>
-            </ul>
-        </footer>
     </div>
 </body>
 </html>

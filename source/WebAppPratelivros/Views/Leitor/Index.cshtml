@@ -9,33 +9,33 @@
 <main>
     <section class="bg-none">
         <h2>Recomendações</h2>
-        <div class="flex justify-between w-9/12">
+        <div class="flex justify-start w-9/12">
         @foreach (var item in Model.livro)
         {
-            <div class="text-center flex flex-col items-center cursor pointer">
+            <div class="text-center mx-5 flex flex-col items-center cursor pointer">
                 @if (item.Pic != null)
                 {
                     var base64 = Convert.ToBase64String(item.Pic);
                     var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
 
-                    <img src="@imgSrc" width="180" height="220" />
+                    <img src="@imgSrc" width="180" class="h-[220px]" />
                 }
-                <p class="text-xl font-bold mt-4">@item.Titulo</p>
+                <a class="text-xl font-bold mt-4" href="@Url.Action("Detalhes", "Livro", new { numerolegal = item.numerolegal })">@item.Titulo</a>
             </div>
         }
         </div>
 
         <h2>Últimas adições</h2>
-        <div class="flex justify-between w-9/12 mb-16">
+        <div class="flex justify-start w-9/12 mb-16">
             @foreach (var item in Model.livro)
             {
-                <div class="text-center flex flex-col items-center cursor pointer">
+                <div class="text-center mx-5 flex flex-col items-center cursor pointer">
                     @if (item.Pic != null)
                     {
                         var base64 = Convert.ToBase64String(item.Pic);
                         var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
 
-                        <img src="@imgSrc" width="180" height="220" />
+                        <img src="@imgSrc" width="180" class="h-[220px]" />
                     }
                     <p class="text-xl font-bold mt-4">@item.Titulo</p>
                 </div>

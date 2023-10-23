@@ -5,117 +5,120 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-        <div id="esmaecer"></div>
-        <div id="modal">
-            <a class="-right-4 -top-4 absolute" href="javascript:fechar()">
-                <img class="w-8" src="Content/imagens/icons/modal-x.png" />
-            </a>
-            <div class="flex items-center">
-                <figure class="mr-4">
-                    <a href=""><img class="w-20" src="Content/imagens/icons/user 2.png" /></a>
-                </figure>
-                <div>
-                    <p><b>Malásia Setalem da Silva Airlines</b></p>
-                    <p>mlasia7alem</p>
-                </div>
-            </div>
-            <div class="my-4 flex">
-                <p><b>Integridade:</b> Boa</p>
-                <div class="tooltip">
-                    <img src="Content/imagens/icons/i-icon.svg" width="12" />
-                    <span class="tooltiptext ml-6 -top-6 bg-[rgba(255,255,255,0.5)] text-[#401B1B] font-bold text-xs border-2 border-[#401B1B]">A integridade é cadastrada pelos próprios usuários em 5 níveis</span>
-                </div>
-            </div>
+<main class="pattern">
+    <div id="esmaecer"></div>
+    <div id="modal">
+        <a class="-right-4 -top-4 absolute" href="javascript:fechar()">
+            <img class="w-8" src="~/Content/imagens/icons/modal-x.png" />
+        </a>
+        <div class="flex items-center">
+            <figure class="mr-4">
+                <a href=""><img class="w-20" src="~/Content/imagens/icons/user 2.png" /></a>
+            </figure>
             <div>
-                <p><b>Fotos:</b></p>
-                <div class="flex mt-4 justify-between">
-                    <figure>
-                        <img src="Content/imagens/image 3.png" />
-                    </figure>
-                    <figure>
-                        <img src="Content/imagens/image 4.png" />
-                    </figure>
-                    <figure>
-                        <img src="Content/imagens/image 4.png" />
-                    </figure>
+                <p><b>Malásia Setalem da Silva Airlines</b></p>
+                <p>mlasia7alem</p>
+            </div>
+        </div>
+        <div class="my-4 flex">
+            <p><b>Integridade:</b> Boa</p>
+            <div class="tooltip">
+                <img src="~/Content/imagens/icons/i-icon.svg" width="12" />
+                <span class="tooltiptext ml-6 -top-6 bg-[rgba(255,255,255,0.5)] text-[#401B1B] font-bold text-xs border-2 border-[#401B1B]">A integridade é cadastrada pelos próprios usuários em 5 níveis</span>
+            </div>
+        </div>
+        <div>
+            <p><b>Fotos:</b></p>
+            <div class="flex mt-4 justify-between">
+                <figure>
+                    <img src="~/Content/imagens/image 3.png" />
+                </figure>
+                <figure>
+                    <img src="~/Content/imagens/image 4.png" />
+                </figure>
+                <figure>
+                    <img src="~/Content/imagens/image 4.png" />
+                </figure>
+            </div>
+        </div>
+    </div>
+    <section class="detalhes-livro">
+        <h2>Detalhes do livro</h2>
+        <div class="flex flex-row w-6/12">
+            <div class="m-4 w-2/6">
+                <figure>
+                    @if (Model.Pic != null)
+                    {
+                        var base64 = Convert.ToBase64String(Model.Pic);
+                        var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+
+                        <img src="@imgSrc" width="180" height="220" />
+                    }
+                </figure>
+                <p class="mt-2"><b>Data de publicação:</b> @Html.DisplayFor(model => model.DataPub)</p>
+            </div>
+            <div class="p-4 w-4/6">
+                <h4 class="mb-1">@Html.DisplayFor(model => model.Titulo)</h4>
+                <div class="flex flex-col flex-wrap h-32 w-96">
+                    <p class="my-1"><b>Escrito por:</b>@Html.DisplayFor(model => model.Autor)</p>
+                    <p class="my-1"><b>Idioma:</b>@Html.DisplayFor(model => model.Idioma)</p>
+                    <p class="my-1"><b>Nº de páginas:</b>@Html.DisplayFor(model => model.NPaginas)</p>
+                    <p class="my-1"><b>ISBN:</b>@Html.DisplayFor(model => model.ISBN)</p>
+                    <p class="my-1"><b>Editora:</b>@Html.DisplayFor(model => model.Editora)</p>
+                    <p class="my-1"><b>Gênero:</b>@Html.DisplayFor(model => model.Genero)</p>
+                    <p class="my-1"><b>Edição:</b>@Html.DisplayFor(model => model.Edicao)</p>
+                </div>
+                <p class="w-full text-lg">
+                    @Html.DisplayFor(model => model.Descricao)
+                </p>
+            </div>
+        </div>
+        <div class="text-center">
+            <h4>Usuários que possuem:</h4>
+            <div class="flex items-center">
+                <div class="card">
+                    <div class="flex items-center">
+                        <img href="" src="~/Content/imagens/icons/user 2.png" width="56" class="user pr-3" />
+                        <p><b>Malásia Setalem da Silva Airlines</b></p>
+                    </div>
+                    <!-- Esse a muda de background color de acordo com o estado de integridade
+                    Ótimo: #2FE6FF
+                    Bom: #60D038
+                    Médio: #FFD12F
+                    Ruim: #FF7222
+                    Péssimo: #D03838
+                    -->
+                    <a class="rounded-full bg-[#60D038] border-2 border-white border-solid w-4 h-4" href="javascript:abrir()"></a>
+                </div>
+                <div class="bg-[#401B1B] p-4 rounded-lg">
+                    <img href="" src="~/Content/imagens/icons/troca-icon.png" width="38" />
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div class="card">
+                    <div class="flex items-center">
+                        <img href="" src="~/Content/imagens/icons/user 2.png" width="56" class="user pr-3" />
+                        <p><b>Akira Vitor Yamazaki</b></p>
+                    </div>
+                    <a class="rounded-full bg-[#FF7222] border-2 border-white border-solid w-4 h-4 " href="javascript:abrir()"></a>
+                </div>
+                <div class="bg-[#401B1B] p-4 rounded-lg">
+                    <img href="" src="~/Content/imagens/icons/troca-icon.png" width="38" />
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div class="card">
+                    <div class="flex items-center">
+                        <img href="" src="~/Content/imagens/icons/user 2.png" width="56" class="user pr-3" />
+                        <p><b>Goleiro Cássio Einstein Pereira</b></p>
+                    </div>
+                    <a class="rounded-full bg-[#FFD12F] border-2 border-white border-solid w-4 h-4" href="javascript:abrir()"></a>
+                </div>
+                <div class="bg-[#401B1B] p-4 rounded-lg">
+                    <img href="" src="~/Content/imagens/icons/troca-icon.png" width="38" />
                 </div>
             </div>
         </div>
-        <section class="detalhes-livro">
-            <h2>Detalhes do livro</h2>
-            <div class="flex flex-row w-6/12">
-                <div class="m-4 w-2/6">
-                    <figure>
-                        @if (Model.Pic != null)
-                        {
-                            var base64 = Convert.ToBase64String(Model.Pic);
-                            var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
-
-                            <img src="@imgSrc" width="180" height="220" />
-                        }
-                    </figure>
-                    <p class="mt-2"><b>Data de publicação:</b> @Html.DisplayFor(model => model.DataPub)</p>
-                </div>
-                <div class="p-4 w-4/6">
-                    <h4 class="mb-1">@Html.DisplayFor(model => model.Titulo)</h4>
-                    <div class="flex flex-col flex-wrap h-32 w-96">
-                        <p class="my-1"><b>Escrito por:</b>@Html.DisplayFor(model => model.Autor)</p>
-                        <p class="my-1"><b>Idioma:</b>@Html.DisplayFor(model => model.Idioma)</p>
-                        <p class="my-1"><b>Nº de páginas:</b>@Html.DisplayFor(model => model.NPaginas)</p>
-                        <p class="my-1"><b>ISBN:</b>@Html.DisplayFor(model => model.ISBN)</p>
-                        <p class="my-1"><b>Editora:</b>@Html.DisplayFor(model => model.Editora)</p>
-                        <p class="my-1"><b>Gênero:</b>@Html.DisplayFor(model => model.Genero)</p>
-                        <p class="my-1"><b>Edição:</b>@Html.DisplayFor(model => model.Edicao)</p>
-                    </div>
-                    <p class="w-[50rem] text-lg">
-                        @Html.DisplayFor(model => model.Descricao)
-                    </p>
-                </div>
-            </div>
-            <div class="text-center">
-                <h4>Usuários que possuem:</h4>
-                <div class="flex items-center">
-                    <div class="card">
-                        <div class="flex items-center">
-                            <img href="" src="Content/imagens/icons/user 2.png" width="56" class="user pr-3" />
-                            <p><b>Malásia Setalem da Silva Airlines</b></p>
-                        </div>
-                        <!-- Esse a muda de background color de acordo com o estado de integridade
-                        Ótimo: #2FE6FF
-                        Bom: #60D038
-                        Médio: #FFD12F
-                        Ruim: #FF7222
-                        Péssimo: #D03838
-                        -->
-                        <a class="rounded-full bg-[#60D038] border-2 border-white border-solid w-4 h-4" href="javascript:abrir()"></a>
-                    </div>
-                    <div class="bg-[#401B1B] p-4 rounded-lg">
-                        <img href="" src="Content/imagens/icons/troca-icon.png" width="38" />
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <div class="card">
-                        <div class="flex items-center">
-                            <img href="" src="Content/imagens/icons/user 2.png" width="56" class="user pr-3" />
-                            <p><b>Akira Vitor Yamazaki</b></p>
-                        </div>
-                        <a class="rounded-full bg-[#FF7222] border-2 border-white border-solid w-4 h-4 " href="javascript:abrir()"></a>
-                    </div>
-                    <div class="bg-[#401B1B] p-4 rounded-lg">
-                        <img href="" src="Content/imagens/icons/troca-icon.png" width="38" />
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <div class="card">
-                        <div class="flex items-center">
-                            <img href="" src="Content/imagens/icons/user 2.png" width="56" class="user pr-3" />
-                            <p><b>Goleiro Cássio Einstein Pereira</b></p>
-                        </div>
-                        <a class="rounded-full bg-[#FFD12F] border-2 border-white border-solid w-4 h-4" href="javascript:abrir()"></a>
-                    </div>
-                    <div class="bg-[#401B1B] p-4 rounded-lg">
-                        <img href="" src="Content/imagens/icons/troca-icon.png" width="38" />
-                    </div>
-                </div>
-            </div>
-        </section>
+    </section>
+</main>
+        
