@@ -81,8 +81,8 @@
                 @Html.EditorFor(model => model.ISBN, new { htmlAttributes = new { @placeholder = "ISBN", @type = "text" } })
                 @Html.EditorFor(model => model.Editora, new { htmlAttributes = new { @placeholder = "Editora", @type = "text" } })
                 <div class="flex">
-                    @Html.EditorFor(model => model.Edicao, new { htmlAttributes = new { @class = "trezerem", @placeholder = "Edição", @type = "number" } })
-                    @Html.EditorFor(model => model.NPaginas, new { htmlAttributes = new { @class = "trezerem", @placeholder = "N° de páginas", @type = "number" } })
+                    @Html.EditorFor(model => model.Edicao, new { htmlAttributes = new { @class = "w-[14rem]", @placeholder = "Edição", @type = "number" } })
+                    @Html.EditorFor(model => model.NPaginas, new { htmlAttributes = new { @class = "w-[14rem]", @placeholder = "N° de páginas", @type = "number" } })
                 </div>
                 @Html.EditorFor(model => model.Idioma, new { htmlAttributes = new { @placeholder = "Idioma", @type = "text", @list = "idiomas" } })
                 <datalist id="idiomas">
