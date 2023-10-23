@@ -18,67 +18,77 @@
                 capa
             </label>
             <input type="file" id="capa" name="capa" accept="image/png, image/jpeg" class="hidden" onchange="fileCheck(this);" />
-            @Html.EditorFor(model => model.Titulo, new { htmlAttributes = new { @placeholder = "Título", @type = "text" } })
-            @Html.EditorFor(model => model.Autor, new { htmlAttributes = new { @placeholder = "Autor", @type = "text" } })
-            @Html.TextAreaFor(model => model.Descricao, new { @placeholder = "Descrição", @class = "p-2 m-2" })
-            @Html.EditorFor(model => model.Genero, new { htmlAttributes = new { @placeholder = "Gênero", @type = "text", @list = "generos" } })
-            <datalist id="generos">
-                <option>Antologia</option>
-                <option>Arte e Fotografia</option>
-                <option>Autoajuda</option>
-                <option>Ação e aventura</option>
-                <option>Biografia</option>
-                <option>Ciência e Tecnologia</option>
-                <option>Conto</option>
-                <option>Crimes Reais</option>
-                <option>Fantasia</option>
-                <option>Ficção científica</option>
-                <option>Ficção histórica</option>
-                <option>Ficção Policial</option>
-                <option>Gastronomia</option>
-                <option>Guias & Como fazer</option>
-                <option>História</option>
-                <option>Horror</option>
-                <option>HQ</option>
-                <option>Humanidades e Ciências Sociais</option>
-                <option>Humor</option>
-                <option>Infantil</option>
-                <option>LGBTQ+</option>
-                <option>Mangá</option>
-                <option>Novela</option>
-                <option>Paternidade e família</option>
-                <option>Religião e Espiritualidade</option>
-                <option>Romance</option>
-                <option>Thriller e Suspense</option>
-                <option>Viagem</option>
-            </datalist>
-            @Html.EditorFor(model => model.DataPub, new { htmlAttributes = new { @placeholder = "Data de publicação", @type = "text", @onfocus = "this.type='date'", @onblur = "this.type='text'" } })
-            @Html.EditorFor(model => model.ISBN, new { htmlAttributes = new { @placeholder = "ISBN", @type = "text" } })
-            @Html.EditorFor(model => model.Editora, new { htmlAttributes = new { @placeholder = "Editora", @type = "text" } })
-            <div class="flex">
-                @Html.EditorFor(model => model.Edicao, new { htmlAttributes = new { @class = "trezerem", @placeholder = "Edição", @type = "number" } })
-                @Html.EditorFor(model => model.NPaginas, new { htmlAttributes = new { @class = "trezerem", @placeholder = "N° de páginas", @type = "number" } })
-            </div>
-            @Html.EditorFor(model => model.Idioma, new { htmlAttributes = new { @placeholder = "Idioma", @type = "text", @list = "idiomas" } })
-            <datalist id="idiomas">
-                <option>Alemão</option>
-                <option>Chinês</option>
-                <option>Coreano</option>
-                <option>Espanhol</option>
-                <option>Francês</option>
-                <option>Grego</option>
-                <option>Holandês</option>
-                <option>Inglês</option>
-                <option>Italiano</option>
-                <option>Japonês</option>
-                <option>Latim</option>
-                <option>Português</option>
-                <option>Romeno</option>
-                <option>Russo</option>
-            </datalist>
+            <button id="botaoRemover" class="rounded-full bg-color2 p-1 relative top-[-21.5rem] left-[5.8rem] hidden z-10" onclick="unshowPreview()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M8.88553 2.09549L6.18345 4.79758L9.02888 7.64302L7.62909 9.04281L4.78365 6.19737L2.09549 8.88553L0.831623 7.62166L3.51978 4.9335L0.688159 2.10188L2.08795 0.702087L4.91957 3.53371L7.62166 0.831623L8.88553 2.09549Z" fill="white" />
+                </svg>
+            </button>
+                <div class="preview">
+                    <img class="hidden" id="file-ip-1-preview">
+                </div>
+                <div id="preview-margin">
+                    @Html.EditorFor(model => model.Titulo, new { htmlAttributes = new { @placeholder = "Título", @type = "text" } })
+                    @Html.EditorFor(model => model.Autor, new { htmlAttributes = new { @placeholder = "Autor", @type = "text" } })
+                    @Html.TextAreaFor(model => model.Descricao, new { @placeholder = "Descrição", @class = "p-2 m-2" })
+                    @Html.EditorFor(model => model.Genero, new { htmlAttributes = new { @placeholder = "Gênero", @type = "text", @list = "generos" } })
+                    <datalist id="generos">
+                        <option>Antologia</option>
+                        <option>Arte e Fotografia</option>
+                        <option>Autoajuda</option>
+                        <option>Ação e aventura</option>
+                        <option>Biografia</option>
+                        <option>Ciência e Tecnologia</option>
+                        <option>Conto</option>
+                        <option>Crimes Reais</option>
+                        <option>Fantasia</option>
+                        <option>Ficção científica</option>
+                        <option>Ficção histórica</option>
+                        <option>Ficção Policial</option>
+                        <option>Gastronomia</option>
+                        <option>Guias & Como fazer</option>
+                        <option>História</option>
+                        <option>Horror</option>
+                        <option>HQ</option>
+                        <option>Humanidades e Ciências Sociais</option>
+                        <option>Humor</option>
+                        <option>Infantil</option>
+                        <option>LGBTQ+</option>
+                        <option>Mangá</option>
+                        <option>Novela</option>
+                        <option>Paternidade e família</option>
+                        <option>Religião e Espiritualidade</option>
+                        <option>Romance</option>
+                        <option>Thriller e Suspense</option>
+                        <option>Viagem</option>
+                    </datalist>
+                    @Html.EditorFor(model => model.DataPub, new { htmlAttributes = new { @placeholder = "Data de publicação", @type = "text", @onfocus = "this.type='date'", @onblur = "this.type='text'" } })
+                    @Html.EditorFor(model => model.ISBN, new { htmlAttributes = new { @placeholder = "ISBN", @type = "text" } })
+                    @Html.EditorFor(model => model.Editora, new { htmlAttributes = new { @placeholder = "Editora", @type = "text" } })
+                    <div class="flex">
+                        @Html.EditorFor(model => model.Edicao, new { htmlAttributes = new { @class = "trezerem", @placeholder = "Edição", @type = "number" } })
+                        @Html.EditorFor(model => model.NPaginas, new { htmlAttributes = new { @class = "trezerem", @placeholder = "N° de páginas", @type = "number" } })
+                    </div>
+                    @Html.EditorFor(model => model.Idioma, new { htmlAttributes = new { @placeholder = "Idioma", @type = "text", @list = "idiomas" } })
+                    <datalist id="idiomas">
+                        <option>Alemão</option>
+                        <option>Chinês</option>
+                        <option>Coreano</option>
+                        <option>Espanhol</option>
+                        <option>Francês</option>
+                        <option>Grego</option>
+                        <option>Holandês</option>
+                        <option>Inglês</option>
+                        <option>Italiano</option>
+                        <option>Japonês</option>
+                        <option>Latim</option>
+                        <option>Português</option>
+                        <option>Romeno</option>
+                        <option>Russo</option>
+                    </datalist>
 
-            <input class="hover:cursor-pointer" type="submit" value="Cadastrar livro" />
-        }
+                    <input class="hover:cursor-pointer" type="submit" value="Cadastrar livro" />
+                </div>
+         }
     </section>
 </main>
 

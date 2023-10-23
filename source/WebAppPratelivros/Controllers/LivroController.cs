@@ -35,7 +35,6 @@ namespace WebAppPratelivros.Controllers
                     capa.InputStream.Read(imgByte, 0, capa.ContentLength);
                     livro.Id = Guid.NewGuid();
                     livro.Pic = imgByte;
-                    livro.numerolegal = context.Livros.Select(m => m.numerolegal).Max() + 1;
                     context.Livros.Add(livro);
                     context.SaveChanges();
                 }
@@ -63,7 +62,8 @@ namespace WebAppPratelivros.Controllers
 {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Livro livro = context.Livros.Find(numerolegal);
+            Livro livro = context.Livros.Where(n => n.numerolegal == numerolegal).First();
+            //Livro livro = context.Livros.Find(numerolegal);
             if (livro == null)
             {
                 return HttpNotFound();

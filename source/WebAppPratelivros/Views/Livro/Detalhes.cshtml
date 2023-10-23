@@ -46,9 +46,15 @@
             <div class="flex flex-row w-6/12">
                 <div class="m-4 w-2/6">
                     <figure>
-                        <img class="self-center" src="Content/imagens/capas/pedrafilosofal.png" />
+                        @if (Model.Pic != null)
+                        {
+                            var base64 = Convert.ToBase64String(Model.Pic);
+                            var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+
+                            <img src="@imgSrc" width="180" height="220" />
+                        }
                     </figure>
-                    <p class="mt-2"><b>Data de publicação:</b> 00/00/0000</p>
+                    <p class="mt-2"><b>Data de publicação:</b> @Html.DisplayFor(model => model.DataPub)</p>
                 </div>
                 <div class="p-4 w-4/6">
                     <h4 class="mb-1">@Html.DisplayFor(model => model.Titulo)</h4>
@@ -61,7 +67,7 @@
                         <p class="my-1"><b>Gênero:</b>@Html.DisplayFor(model => model.Genero)</p>
                         <p class="my-1"><b>Edição:</b>@Html.DisplayFor(model => model.Edicao)</p>
                     </div>
-                    <p class="w-[50rem] w-full text-lg">
+                    <p class="w-[50rem] text-lg">
                         @Html.DisplayFor(model => model.Descricao)
                     </p>
                 </div>

@@ -16,7 +16,7 @@
                 <!-- Resultado 1 -->
                 <div class="flex mt-16">
                     <div class="flex flex-col">
-                        <a href="@Url.Action("Detalhes", "Livro")">
+                        <a href="@Url.Action("Detalhes", "Livro", new { numerolegal = item.numerolegal })">
                             <figure>
                                 @if (item.Pic != null)
                                 {

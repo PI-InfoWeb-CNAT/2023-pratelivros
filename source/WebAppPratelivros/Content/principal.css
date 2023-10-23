@@ -89,7 +89,7 @@ main section {
 }
 
 main section.banner {
-  background-image: url(/Content/imagens/book_bg.png);
+  background-image: url(Content/imagens/book_bg.png);
 }
 
 main section h2 {
@@ -193,7 +193,7 @@ section h4 {
   align-items: center;
   padding: 0.7em 1em;
   background-color: #F2CDAC;
-  width: 26rem;
+  width: 30rem;
   border-radius: 0.5em;
   margin: 1em;
 }
@@ -348,7 +348,7 @@ max-height: 150px;
 border-top: 1px solid #401B1B;
 }
 #state5:checked ~ .content5 {  
-max-height: 150px;
+max-height: 190px;
 border-top: 1px solid #401B1B;
 }
 #state6:checked ~ .content6 {  
@@ -373,4 +373,17 @@ margin: 16px;
   width: 12rem;
   height: 18rem;
   top: -22rem;
+}
+
+.pattern{
+  background-image: url('Content/imagens/pattern.png');
+  background-repeat: repeat;
+}
+.pattern-marrom{
+  background-image: url('Content/imagens/pattern-marrom.svg');
+  background-repeat: repeat;
+}
+.bg-form{
+  background-image: url('Content/imagens/bg-form.png');
+  background-size: cover;
 }
