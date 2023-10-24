@@ -101,6 +101,10 @@ namespace WebAppPratelivros.Controllers
                 return View("Login");
             }
         }
+        public ActionResult redefinirSenha()
+        {
+            return View();
+        }
         public ActionResult Verify()
         {
             return View();

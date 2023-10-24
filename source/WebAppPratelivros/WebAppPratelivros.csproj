@@ -168,6 +168,8 @@
     <Content Include="Views\Livro\Cadastro.cshtml" />
     <Content Include="Views\Livro\Detalhes.cshtml" />
     <Content Include="Views\Livro\pesquisarLivro.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Leitor\redefinirSenha.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

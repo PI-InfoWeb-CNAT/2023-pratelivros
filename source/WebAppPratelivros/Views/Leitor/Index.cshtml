@@ -18,7 +18,7 @@
                     var base64 = Convert.ToBase64String(item.Pic);
                     var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
 
-                    <img src="@imgSrc" width="180" class="h-[220px]" />
+                    <a href="@Url.Action("Detalhes", "Livro", new { numerolegal = item.numerolegal })"><img src="@imgSrc" width="180" class="h-[220px]" /></a>
                 }
                 <a class="text-xl font-bold mt-4" href="@Url.Action("Detalhes", "Livro", new { numerolegal = item.numerolegal })">@item.Titulo</a>
             </div>
@@ -35,7 +35,7 @@
                         var base64 = Convert.ToBase64String(item.Pic);
                         var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
 
-                        <img src="@imgSrc" width="180" class="h-[220px]" />
+                        <a href="@Url.Action("Detalhes", "Livro", new { numerolegal = item.numerolegal })"><img src="@imgSrc" width="180" class="h-[220px]" /></a>
                     }
                     <p class="text-xl font-bold mt-4">@item.Titulo</p>
                 </div>
