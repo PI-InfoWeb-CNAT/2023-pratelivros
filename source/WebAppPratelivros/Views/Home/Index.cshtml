@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "HOME";
     var msg = TempData["Mensagem"] as string;
+    Layout = null;
 }
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -22,11 +23,17 @@
     <header>
         <div>
             <h1>
-                <a href="@Url.Action("Index", "Home")"><img src="/Content/imagens/logo.png" width="150" /></a>
+                <a href="@Url.Action("Index", "Home")"><img src="~/Content/imagens/logo.png" width="150" /></a>
             </h1>
             @using (Html.BeginForm("pesquisarLivro", "Livro", FormMethod.Get))
             {
-                @Html.TextBox("SearchString") <input type="submit" value="Filter" />
+                <div class="flex items-center">
+                    @Html.TextBox("SearchString")
+                    <input type="submit" name="pesquisa" id="pesquisa" value="pesquisar" class="hidden" />
+                    <label for="pesquisa">
+                        <img src="~/Content/imagens/icons/pesquisa-icon.svg" width="20" class="absolute left-[41rem] top-[3.5rem]" />
+                    </label>
+                </div>
             }
         </div>
         <div>

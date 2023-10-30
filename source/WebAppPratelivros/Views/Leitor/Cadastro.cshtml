@@ -6,24 +6,25 @@
 }
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>pratelivros - Cadastro</title>
+    <link rel="stylesheet" href="@Url.Content("~/Content/principal.css")" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="@Url.Content("~/Content/principal.css")" type="text/css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
 </head>
 
 <body class="flex justify-center items-center h-screen pattern-marrom">
-    <div class="bg-form w-[60rem] h-[45rem] px-16 flex items-center">
+    <div class="bg-form w-[50rem] h-[45rem] px-16 flex items-center">
         <div>
             <h2 class="text-white font-semibold text-4xl mt-2 w-3/5">Troque seus livros com facilidade!</h2>
-            <h4 class="text-white font-semibold text-xl mt-4">O pratelivros™ te oferece tudo que precisa para encontrar ótimas opções de livros e economizar mais.</h4>
+            <h4 class="text-white font-semibold text-xl mt-4 w-[29rem]">O pratelivros™ te oferece tudo que precisa para encontrar ótimas opções de livros e economizar mais.</h4>
             <ul class="flex">
                 <li class="mr-2 my-6">
                     <a href=""><img src="~/Content/imagens/icons/instagram-white-icon.svg" /></a>
@@ -54,8 +55,8 @@
                     @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "E-mail", @type = "text" } })
                     @Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "w-4/5 mb-3 border-none", @placeholder = "Senha", @type = "password" } })
                     <div class="flex justify-between w-4/5 mt-2">
-                        @Html.EditorFor(model => model.Celular, new { htmlAttributes = new { @class = "m-0 border-none cadastroInput", @placeholder = "Celular (opcional)", @type = "tel" } })
-                        @Html.EditorFor(model => model.Idade, new { htmlAttributes = new { @class = "m-0 cadastroInput border-none", @placeholder = "Data de nascimento", @type = "text", @onfocus = "this.type='date'", @onblur = "this.type='text'" } })
+                        @Html.EditorFor(model => model.Celular, new { htmlAttributes = new { @class = "m-0 border-none cadastroInput w-[48%]", @placeholder = "Celular (opcional)", @type = "tel" } })
+                        @Html.EditorFor(model => model.Idade, new { htmlAttributes = new { @class = "m-0 cadastroInput border-none w-[48%]", @placeholder = "Data de nascimento", @type = "text", @onfocus = "this.type='date'", @onblur = "this.type='text'" } })
                     </div>
                     <div class="flex items-center mt-6">
                         <label class="radio mx-2 font-bold flex justify-center items-center">
@@ -84,10 +85,7 @@
                     <hr class="border-color2 border w-[10rem]" />
                     <p class="my-6">Já tem uma conta? <a class="hover:underline" href="@Url.Action("Login", "Leitor")"><b>Conecte-se</b></a></p>
                 </div>
-
-
             </div>
-
         </main>
     </div>
 </body>
