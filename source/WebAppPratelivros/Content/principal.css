@@ -387,3 +387,11 @@ margin: 16px;
   background-image: url('imagens/bg-form.png');
   background-size: cover;
 }
+.botao1:hover{ 
+  transform: scale(1.1);
+}
+.botao1{
+  transition-duration: 0.2s;
+  transition-property: transform;
+  transition-timing-function: ease;
+}

@@ -35,7 +35,7 @@
             @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @placeholder = "Insira o título do livro", @type = "text" } })
             @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @placeholder = "Insira o seu email...", @type = "text" } })
             @Html.DropDownListFor(model => model.Tipo, new SelectList(Enum.GetValues(typeof(WebAppPratelivros.Models.Denuncia))), "Tipo da mensagem", new { @class = "p-2 m-2" })
-            <input class="hover:cursor-pointer" type="submit" value="Enviar" />
+            <input class="hover:cursor-pointer botao1" type="submit" value="Enviar" />
         }
     </section>
 </body>

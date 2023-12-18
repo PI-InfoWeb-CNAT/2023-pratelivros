@@ -60,7 +60,7 @@
                     @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "w-4/5 my-4 border-none", @placeholder = "E-mail", @type = "text" } })
                     @Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "w-4/5 my-4 border-none", @placeholder = "Senha", @type = "password" } })
                     <a class="mr-80 ml-3 hover:underline font-bold" href="@Url.Action("redefinirSenha", "Leitor")">Esqueceu sua senha?</a>
-                    <input class="hover:cursor-pointer" type="submit" value="Login" />
+                    <input class="hover:cursor-pointer botao1" type="submit" value="Login" />
                 }
                 @section ScriptPage {
                     <script src="~/Scripts/jquery.validate.min.js">
