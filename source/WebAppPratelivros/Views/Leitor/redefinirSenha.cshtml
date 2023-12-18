@@ -21,7 +21,7 @@
 </head>
 
 <body class="flex justify-center items-center h-screen pattern-marrom">
-    <div class="bg-form w-[50rem] h-[45rem] px-16 flex items-center">
+    <div class="bg-form w-[50rem] h-[47rem] px-16 flex items-center">
         <div>
             <h2 class="text-white font-semibold text-4xl mt-2">Pratelivros</h2>
             <h2 class="text-white font-semibold text-4xl mt-2">Pra Ter Livros</h2>
@@ -39,7 +39,7 @@
             </ul>
         </div>
     </div>
-    <div class="flex flex-col justify-around w-[38rem] h-[45rem] bg-color1">
+    <div class="flex flex-col justify-around w-[38rem] h-[47rem] bg-color1">
         <header class="flex justify-center m-4">
             <h1 class="flex justify-center">
                 <a href="@Url.Action("Index", "Home")"><img src="~/Content/imagens/logo.png" width="150" /></a>
@@ -53,22 +53,21 @@
                 </p>
             </div>
             <div class="flex flex-col items-left m-4">
-                @using (Html.BeginForm("redefinirSenha", "Leitor", FormMethod.Post, new { @class = "flex flex-col items-center" }))
-                {
-                    @Html.AntiForgeryToken()
-                    @Html.ValidationSummary()
-                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "w-4/5 my-4 border-none", @placeholder = "E-mail", @type = "text" } })
-                    @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "w-4/5 my-4 border-none", @placeholder = "Username", @type = "text" } })
+
+                <form action="/Leitor/redefinirSenha" method="post" class="flex flex-col items-center">
+                    <input class="w-4/5 my-4 border-none" id="Email" name="Email" type="email" placeholder="Email" value="" />
+                    <input class="w-4/5 my-4 border-none" id="Senha" name="Senha" type="password" placeholder="Senha" value="" />
+                    <input class="w-4/5 my-4 border-none" id="novaSenha" name="novaSenha" type="password" placeholder="Nova Senha" value="" />
                     <a class="mr-[21rem] hover:underline font-bold" href="@Url.Action("Login", "Leitor")">Retornar ao login</a>
-                    <input class="hover:cursor-pointer" type="submit" value="Enviar e-mail" />
-                }
+                    <input class="hover:cursor-pointer" type="submit" value="Redefinir Senha" />
+                </form>
                 <div class="flex flex-col items-center">
                     <p class="relative mb-[-0.7rem] bg-color1 px-2 font-semibold">ou</p>
                     <hr class="border-color2 border w-[10rem]" />
                     <p class="my-6">Não consegue redefinir a senha? <a class="hover:underline" href="@Url.Action("Cadastro", "Leitor")"><b>Criar nova conta</b></a></p>
                 </div>
             </div>
-        </main>
-    </div>
-</body>
-</html>
+            </main>
+        </div>
+    </body>
+    </html>

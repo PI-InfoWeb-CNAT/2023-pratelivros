@@ -147,12 +147,14 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LeitorController.cs" />
     <Compile Include="Controllers\LivroController.cs" />
+    <Compile Include="Controllers\LivroDenunciaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Home.cs" />
     <Compile Include="Models\Leitor.cs" />
     <Compile Include="Models\Livro.cs" />
+    <Compile Include="Models\LivroDenuncia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +172,7 @@
     <Content Include="Views\Livro\pesquisarLivro.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Leitor\redefinirSenha.cshtml" />
+    <Content Include="Views\LivroDenuncia\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

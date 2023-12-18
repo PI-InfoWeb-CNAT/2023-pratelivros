@@ -1,0 +1,42 @@
+﻿@model WebAppPratelivros.Models.LivroDenuncia
+
+@{
+    Layout = null;
+    var msg = TempData["Mensagem"] as string;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="@Url.Content("~/Content/principal.css")" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
+</head>
+<body class="pattern">
+    <section class="bg-[#F2CDAC] mx-auto mt-32 w-[30rem] flex flex-col items-center rounded-lg p-6">
+        @if (!string.IsNullOrEmpty(msg))
+        {
+            <div class="email enviado">
+                <p>@msg</p>
+            </div>
+        }
+        <h2 class="font-semibold text-4xl my-4">Envie sua denúncia</h2>
+        @using (Html.BeginForm("Index", "LivroDenuncia", FormMethod.Post, new { @class = "flex text-center items-center", enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary()
+
+            @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @placeholder = "Insira o título do livro", @type = "text" } })
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @placeholder = "Insira o seu email...", @type = "text" } })
+            @Html.DropDownListFor(model => model.Tipo, new SelectList(Enum.GetValues(typeof(WebAppPratelivros.Models.Denuncia))), "Tipo da mensagem", new { @class = "p-2 m-2" })
+            <input class="hover:cursor-pointer" type="submit" value="Enviar" />
+        }
+    </section>
+</body>
+</html>

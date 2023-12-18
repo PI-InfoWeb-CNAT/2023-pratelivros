@@ -105,6 +105,27 @@ namespace WebAppPratelivros.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult redefinirSenha(string email, string senha, string novaSenha)
+        {
+
+            var data = context.Leitor.Where(s => s.Email.Equals(email) && s.Senha.Equals(senha)).ToList();
+            if (data.Count() > 0)
+            {
+                var leitor = data.First();
+                leitor.Senha = novaSenha;
+                context.SaveChanges();
+                return RedirectToAction("Index", "Leitor");
+            }
+            else
+            {
+                // Caso os dados de login estejam incorretos, adicione uma mensagem de erro à ViewData
+                ViewData["ErrorMessage"] = "Email ou senha incorretos.";
+                    
+                // Retorna para a View de login, exibindo a mensagem de erro
+                return View("Login");
+            }
+        }
         public ActionResult Verify()
         {
             return View();

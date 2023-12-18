@@ -1,12 +1,17 @@
-﻿using System;
+﻿using MimeKit;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
 using WebAppPratelivros.Models;
 using static Org.BouncyCastle.Crypto.Engines.SM2Engine;
+using MailKit.Net.Smtp;
+using SmtpClient = MailKit.Net.Smtp.SmtpClient;
+using Org.BouncyCastle.Crypto.Macs;
 
 namespace WebAppPratelivros.Controllers
 {

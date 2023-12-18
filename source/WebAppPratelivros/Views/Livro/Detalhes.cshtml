@@ -69,8 +69,9 @@
                     <p class="my-1"><b>Edição:</b> @Html.DisplayFor(model => model.Edicao)</p>
                 </div>
                 <p class="w-full text-lg">
-                     @Html.DisplayFor(model => model.Descricao)
+                    @Html.DisplayFor(model => model.Descricao)
                 </p>
+                <a href="@Url.Action("Index", "LivroDenuncia")" class="text-red-600 font-semibold hover:underline hover:cursor-pointer flex items-center"><img src="~/Content/imagens/icons/flag-icon.png" class="mr-2" />Faça uma denúncia</a>
             </div>
         </div>
         <div class="text-center">
